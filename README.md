@@ -5,7 +5,7 @@
 [Swift]: https://swift.org/
 [VSCode]: https://code.visualstudio.com/docs
 
-[![Swift Workflow](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/go.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/go.yml)
+[![Swift Workflow](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/swift.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/swift.yml)
 
 # Calculate Engine
 
