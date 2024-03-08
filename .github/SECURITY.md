@@ -1,4 +1,4 @@
-[Report]: https://github.com/HyaenaTechnologies/alculate_engine_swift/security/advisories
+[Report]: https://github.com/HyaenaTechnologies/calculate_engine_swift/security/advisories
 
 # Security Policy
 
