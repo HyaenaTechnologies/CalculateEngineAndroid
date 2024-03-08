@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Run Bash",
+            "program": "/usr/bin/bash",
+            "type": "command"
+        },
+        {
+            "args": [
+                "build"
+            ],
+            "name": "Bazel Build",
+            "program": "/usr/bin/kotlin/bazel_build/bazel",
+            "type": "command"
+        },
+        {
+            "buildParams": [
+                "$USER_HOME$/VersionControl/github_get/lib/main.go"
+            ],
+            "goExecPath": "/usr/bin/go/bin/go",
+            "name": "github_get",
+            "type": "go"
+        }
+    ]
+}
