@@ -1,5 +1,5 @@
 {
-  "originHash" : "d53d41c6f63945acfa501416dc23fa5c9d33de2029f86e19472c0e52a1bf1897",
+  "originHash" : "ec087e5a37ce112b973912c6161c552fa2b0ffddf74f57f17b260f6e752c180e",
   "pins" : [
     {
       "identity" : "swift-algorithms",
@@ -53,6 +53,15 @@
       "state" : {
         "revision" : "971ba26378ab69c43737ee7ba967a896cb74c0d1",
         "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "swift-metrics-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-metrics-extras.git",
+      "state" : {
+        "revision" : "c71e170ace6f8b04a4d11424fddde5c44ce1f784",
+        "version" : "0.3.1"
       }
     },
     {

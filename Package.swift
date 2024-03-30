@@ -38,6 +38,10 @@ let package = Package(
             from: "2.4.1"
         ),
         .package(
+            url: "https://github.com/apple/swift-metrics-extras.git", 
+            from: "0.1.0"
+        ),
+        .package(
             url: "https://github.com/apple/swift-numerics", 
             from: "1.0.0"
         ),
