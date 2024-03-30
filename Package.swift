@@ -8,7 +8,7 @@ let package = Package(
     ],
     products: [
         .executable(
-            name: "calculate_engine_swift",
+            name: "calculate_engine_swift_executable",
             targets: ["calculate_engine_swift_target"]
         ),
     ],
