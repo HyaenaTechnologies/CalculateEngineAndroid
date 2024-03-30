@@ -5,8 +5,6 @@
 [Swift]: https://swift.org/
 [VSCode]: https://code.visualstudio.com/docs
 
-[![Swift Workflow](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/swift.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_swift/actions/workflows/swift.yml)
-
 # Calculate Engine
 
 Calculate Engine is an Open Source Mathematics Engine. The function is to provide
