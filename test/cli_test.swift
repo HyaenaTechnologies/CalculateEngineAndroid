@@ -1,7 +1,7 @@
 import XCTest
 @testable import calculate_engine_swift
 
-final class calculate_engine_swiftTests: XCTestCase {
+final class cli_test: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
