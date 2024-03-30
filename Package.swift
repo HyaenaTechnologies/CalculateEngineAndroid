@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .executable(
             name: "calculate_engine_swift",
-            targets: ["calculate_engine_swift"]
+            targets: ["calculate_engine_swift_target"]
         ),
     ],
     dependencies: [
@@ -52,7 +52,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "calculate_engine_swift", 
+            name: "calculate_engine_swift_target", 
             dependencies: [
                 .product(
                     name: "Algorithms", 
@@ -93,7 +93,7 @@ let package = Package(
         ]),
         .testTarget(
             name: "cli_test",
-            dependencies: ["calculate_engine_swift"]
+            dependencies: ["calculate_engine_swift_target"]
         ),
     ]
 )
