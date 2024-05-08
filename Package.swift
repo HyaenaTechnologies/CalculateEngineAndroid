@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "calculate_engine_swift",
+    name: "calculate_engine",
     platforms: [
         .macOS(.v11),
     ],
     products: [
         .executable(
-            name: "calculate_engine_swift_executable",
-            targets: ["calculate_engine_swift_target"]
+            name: "calculate_engine_executable",
+            targets: ["calculate_engine_target"]
         ),
     ],
     dependencies: [
@@ -56,7 +56,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "calculate_engine_swift_target", 
+            name: "calculate_engine_target", 
             dependencies: [
                 .product(
                     name: "Algorithms", 
@@ -97,7 +97,7 @@ let package = Package(
         ]),
         .testTarget(
             name: "cli_test",
-            dependencies: ["calculate_engine_swift_target"]
+            dependencies: ["calculate_engine_target"]
         ),
     ]
 )
