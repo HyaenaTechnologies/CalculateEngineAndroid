@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "calculate_engine",
-    platforms: [
-        .macOS(.v11),
-    ],
     products: [
         .executable(
             name: "calculate_engine_executable",

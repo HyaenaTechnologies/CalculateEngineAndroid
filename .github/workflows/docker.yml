@@ -6,9 +6,6 @@ on:
     
   pull_request:
     branches: [ "main" ]
-    
-  schedule:
-  - cron: "30 03 * * 6"
 
 jobs:
   build:
