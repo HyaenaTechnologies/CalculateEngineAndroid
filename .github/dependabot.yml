@@ -11,7 +11,7 @@ updates:
   - package-ecosystem: "swift"
     commit-message:
       prefix: "Swift Package Manager"
-    directory: "/" 
+    directory: "/native" 
     schedule:
       day: "saturday"
       interval: "weekly"
@@ -20,7 +20,7 @@ updates:
   - package-ecosystem: "gradle"
     commit-message:
       prefix: "Gradle"
-    directory: "/android" 
+    directory: "/" 
     schedule:
       day: "saturday"
       interval: "weekly"

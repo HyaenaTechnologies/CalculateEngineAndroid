@@ -34,4 +34,4 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build Package
-      run: ./android/gradlew clean build --debug --info 
+      run: ./gradlew clean build --debug --info 
