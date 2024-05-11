@@ -17,4 +17,13 @@ updates:
       interval: "weekly"
       time: "03:00"
     
+  - package-ecosystem: "gradle"
+    commit-message:
+      prefix: "Gradle"
+    directory: "/android" 
+    schedule:
+      day: "saturday"
+      interval: "weekly"
+      time: "03:00"
+
 version: 2

@@ -1,0 +1,17 @@
+.aswb
+*.iml
+.gradle
+**/build/
+local.properties
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+.build/
+build/
+**/build/
+bazel-bin
+bazel-CalculateEngine
+bazel-out
+bazel-testlogs

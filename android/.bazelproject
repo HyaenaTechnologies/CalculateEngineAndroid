@@ -1,0 +1,24 @@
+additional_languages:
+  android
+  c
+  dart
+  java
+  kotlin
+
+android_min_sdk: 34
+
+android_sdk_platform: "android-34"
+
+bazel_binary: /usr/bin/kotlin/bazel_build/bazel
+
+directories:
+  .
+
+derive_targets_from_directories: true
+
+java_language_level: 17
+
+test_sources:
+  app/test/kotlin/*
+
+workspace_type: android

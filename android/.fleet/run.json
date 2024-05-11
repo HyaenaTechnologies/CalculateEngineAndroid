@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Run Bash",
+            "program": "/usr/bin/bash",
+            "type": "command"
+        },
+        {
+            "args": [
+                "--debug",
+                "--info"
+            ],
+            "name": "Gradle Build",
+            "tasks": [
+                "clean",
+                "build"
+            ],
+            "type": "gradle"
+        },
+        {
+            "args": [
+                "build"
+            ],
+            "name": "Bazel Build",
+            "program": "/usr/bin/bazel_build/bazel",
+            "type": "command"
+        }
+    ]
+}
