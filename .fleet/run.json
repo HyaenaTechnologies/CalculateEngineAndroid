@@ -16,14 +16,6 @@
                 "build"
             ],
             "type": "gradle"
-        },
-        {
-            "args": [
-                "build"
-            ],
-            "name": "Bazel Build",
-            "program": "/usr/bin/bazel_build/bazel",
-            "type": "command"
         }
     ]
 }

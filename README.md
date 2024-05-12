@@ -1,7 +1,5 @@
 [Android]: https://developer.android.com/studio
 
-[Bazel]: https://bazel.build/reference
-
 [Compose]: https://developer.android.com/jetpack/compose
 
 [Fleet]: https://jetbrains.com/fleet/
@@ -42,7 +40,6 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 ## Build
 
 - [Android Studio][Android]
-- [Bazel Build][Bazel]
 - [Gradle Build][Gradle]
 - [IntelliJ IDEA][IDEA]
 - [Kotlin Language][Kotlin]
@@ -52,14 +49,6 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [Maven Package Manager][Maven]
 - [Swift Language][Swift]
 - [Visual Studio Code][VSCode]
-
-```shell
-git clone
-
-bazel build
-```
-
-OR
 
 ```shell
 git clone
