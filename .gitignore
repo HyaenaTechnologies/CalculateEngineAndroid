@@ -1,4 +1,3 @@
-.aswb
 *.iml
 .gradle
 **/build/
@@ -11,7 +10,3 @@ captures
 .build/
 build/
 **/build/
-bazel-bin
-bazel-CalculateEngine
-bazel-out
-bazel-testlogs
