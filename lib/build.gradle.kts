@@ -62,7 +62,7 @@ android {
 val androidx_compose: String = "1.6.7"
 val androidx_lifecycle: String = "2.7.0"
 val io_ktor: String = "2.3.11"
-val jetbrains_kotlin: String = "1.9.24"
+val jetbrains_kotlin: String = "1.9.23"
 val org_jetbrains_kotlinx_coroutines: String = "1.8.1"
 val org_jetbrains_kotlinx_io: String = "0.3.4"
 val org_jetbrains_kotlinx_serialization = "1.6.3"

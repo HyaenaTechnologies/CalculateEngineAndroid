@@ -6,7 +6,7 @@ dependencyResolutionManagement {
     }
 }
 
-include(":app")
+include(":lib")
 
 pluginManagement {
     repositories {
