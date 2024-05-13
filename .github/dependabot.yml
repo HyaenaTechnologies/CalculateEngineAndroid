@@ -8,19 +8,19 @@ updates:
       interval: "weekly"
       time: "03:00"
     
-  - package-ecosystem: "swift"
-    commit-message:
-      prefix: "Swift Package Manager"
-    directory: "/native" 
-    schedule:
-      day: "saturday"
-      interval: "weekly"
-      time: "03:00"
-    
   - package-ecosystem: "gradle"
     commit-message:
       prefix: "Gradle"
     directory: "/" 
+    schedule:
+      day: "saturday"
+      interval: "weekly"
+      time: "03:00"
+
+  - package-ecosystem: "swift"
+    commit-message:
+      prefix: "Swift Package Manager"
+    directory: "/native" 
     schedule:
       day: "saturday"
       interval: "weekly"
