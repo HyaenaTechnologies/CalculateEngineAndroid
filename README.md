@@ -25,12 +25,12 @@
 <a href="https://github.com/HyaenaTechnologies/calculate_engine_compose">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine/blob/main/lib/src/main/res/raw/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/calculate_engine_compose/blob/main/lib/src/main/res/raw/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>
 
-[![Anroid Workflow](https://github.com/HyaenaTechnologies/calculate_engine/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine/actions/workflows/android.yml)
+[![Anroid Workflow](https://github.com/HyaenaTechnologies/calculate_engine_compose/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_compose/actions/workflows/android.yml)
 
 # Calculate Engine
 

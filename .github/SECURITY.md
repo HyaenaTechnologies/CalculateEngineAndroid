@@ -1,4 +1,4 @@
-[Report]: https://github.com/HyaenaTechnologies/calculate_engine/security/advisories
+[Report]: https://github.com/HyaenaTechnologies/calculate_engine_compose/security/advisories
 
 # Security Policy
 
