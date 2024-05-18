@@ -72,7 +72,7 @@ dependencies {
     implementation("com.android.tools.compose:compose-preview-detector:31.5.0-alpha08")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
-    implementation("androidx.compose.compiler:compiler:1.5.13")
+    implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidx_compose")
     implementation("androidx.compose.material:material:$androidx_compose")
     implementation("androidx.compose.material3:material3:1.2.1")
