@@ -69,7 +69,7 @@ val org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.5.0-alpha08")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha02")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
     implementation("androidx.compose.compiler:compiler:1.5.13")
