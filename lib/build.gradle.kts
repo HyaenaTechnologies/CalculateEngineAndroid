@@ -84,7 +84,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle")
     implementation("androidx.navigation:navigation-compose:2.7.7")
-    implementation("androidx.paging:paging-compose:3.2.1")
+    implementation("androidx.paging:paging-compose:3.3.0")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
