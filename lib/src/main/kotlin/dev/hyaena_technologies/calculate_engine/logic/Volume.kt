@@ -34,7 +34,7 @@ class Volume {
 
     // Volume of a Pyramid
     fun pyramid(baseArea: Double, height: Double): Double {
-        return (baseArea * height) / 2
+        return (baseArea * height) / 3
     }
 
     // Volume of a Sphere
