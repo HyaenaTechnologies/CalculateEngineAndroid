@@ -29,7 +29,7 @@ android {
     compileSdk = 34
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.13"
+        kotlinCompilerExtensionVersion = "1.5.14"
     }
 
     defaultConfig {
@@ -62,17 +62,17 @@ android {
 val androidx_compose: String = "1.6.7"
 val androidx_lifecycle: String = "2.7.0"
 val io_ktor: String = "2.3.11"
-val jetbrains_kotlin: String = "1.9.23"
+val jetbrains_kotlin: String = "1.9.24"
 val org_jetbrains_kotlinx_coroutines: String = "1.8.1"
 val org_jetbrains_kotlinx_io: String = "0.3.4"
 val org_jetbrains_kotlinx_serialization = "1.6.3"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.5.0-alpha08")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha02")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
-    implementation("androidx.compose.compiler:compiler:1.5.13")
+    implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidx_compose")
     implementation("androidx.compose.material:material:$androidx_compose")
     implementation("androidx.compose.material3:material3:1.2.1")
@@ -84,7 +84,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle")
     implementation("androidx.navigation:navigation-compose:2.7.7")
-    implementation("androidx.paging:paging-compose:3.2.1")
+    implementation("androidx.paging:paging-compose:3.3.0")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
@@ -117,7 +117,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$org_jetbrains_kotlinx_coroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$org_jetbrains_kotlinx_coroutines")
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-io-bytestring:$org_jetbrains_kotlinx_io")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:$org_jetbrains_kotlinx_io")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$org_jetbrains_kotlinx_serialization")
