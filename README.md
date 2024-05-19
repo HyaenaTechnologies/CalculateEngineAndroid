@@ -18,23 +18,21 @@
 
 [Stax]: https://openstax.org
 
-[Swift]: https://swift.org/
-
 [VSCode]: https://code.visualstudio.com/docs
 
-<a href="https://github.com/HyaenaTechnologies/calculate_engine_compose">
+<a href="https://github.com/HyaenaTechnologies/calculate_engine_android">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine_compose/blob/main/lib/src/main/res/raw/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/calculate_engine_android/blob/main/lib/src/main/res/raw/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>
 
-[![Anroid Workflow](https://github.com/HyaenaTechnologies/calculate_engine_compose/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_compose/actions/workflows/android.yml)
+[![Anroid Workflow](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml)
 
 # Calculate Engine
 
-Calculate Engine is an Open Source Mathematics Engine. The function is to provide Calculators, 
+Calculate Engine is an Open Source Mathematics Engine. The function is to provide Calculators,
 Steps and promote [OpenStax][Stax], [Rice University][Rice].
 
 ## Build
@@ -47,19 +45,10 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [JetBrains Fleet][Fleet]
 - [Jetpack Compose][Compose]
 - [Maven Package Manager][Maven]
-- [Swift Language][Swift]
 - [Visual Studio Code][VSCode]
 
 ```shell
 git clone
 
 gradle build
-```
-
-&&
-
-```shell
-git clone
-
-swift build
 ```
