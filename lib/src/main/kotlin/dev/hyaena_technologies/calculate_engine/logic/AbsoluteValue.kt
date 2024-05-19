@@ -1,7 +1,7 @@
 package dev.hyaena_technologies.calculate_engine.logic
 
 // Absolute Value of Objects
-fun absoluteValue(value: Int): Int {
+fun absoluteValue(value: Double): Double {
     if (value < 0) {
         return -value
     } else {
