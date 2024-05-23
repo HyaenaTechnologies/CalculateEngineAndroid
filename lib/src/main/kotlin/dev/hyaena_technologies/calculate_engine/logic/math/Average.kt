@@ -1,4 +1,4 @@
-package dev.hyaena_technologies.calculate_engine.logic
+package dev.hyaena_technologies.calculate_engine.logic.math
 
 // Average of Objects
 fun average(values: Array<Double>): Double {

@@ -1,4 +1,4 @@
-package dev.hyaena_technologies.calculate_engine.logic
+package dev.hyaena_technologies.calculate_engine.logic.math
 
 // Radius of Objects
 class Radius {

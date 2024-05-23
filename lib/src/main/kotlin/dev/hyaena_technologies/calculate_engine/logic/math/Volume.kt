@@ -1,4 +1,4 @@
-package dev.hyaena_technologies.calculate_engine.logic
+package dev.hyaena_technologies.calculate_engine.logic.math
 
 // Volume of Objects
 class Volume {
