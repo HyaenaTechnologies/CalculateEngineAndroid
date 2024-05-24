@@ -4,22 +4,22 @@ package dev.hyaena_technologies.calculate_engine.logic.math
 class Area {
     // Area of a Circle
     fun circle(radius: Double): Double {
-        return pi() * radius * radius
+        return pi() * (radius * radius)
     }
 
     // Area of a Cube
     fun cube(length: Double): Double {
-        return length * length * 6
+        return (length * length) * 6
     }
 
     // Area of a Cylinder
     fun cylinder(height: Double, radius: Double): Double {
-        return (pi() * radius * radius + pi() * radius * height) * 2
+        return (2 * pi() * radius * radius) + (2 * height * pi() * radius)
     }
 
     // Area of a Hemisphere
     fun hemisphere(radius: Double): Double {
-        return pi() * radius * radius * 3
+        return (pi() * radius * radius) * 3
     }
 
     // Area of a Parallelogram
@@ -34,7 +34,7 @@ class Area {
 
     // Area of a Sphere
     fun sphere(radius: Double): Double {
-        return pi() * radius * radius * 4
+        return (pi() * radius * radius) * 4
     }
 
     // Area of a Square
