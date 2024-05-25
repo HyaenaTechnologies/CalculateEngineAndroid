@@ -1,5 +1,5 @@
 plugins {
-    val com_android = "8.4.0"
+    val com_android = "8.4.1"
     val org_jetbrains_kotlin = "1.9.24"
 
     id("com.android.application") version "$com_android" apply false

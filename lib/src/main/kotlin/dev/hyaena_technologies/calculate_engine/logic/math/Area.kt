@@ -8,8 +8,8 @@ class Area {
     }
 
     // Area of a Cube
-    fun cube(length: Double): Double {
-        return (length * length) * 6
+    fun cube(length: Double, width: Double): Double {
+        return 6 * (length * width)
     }
 
     // Area of a Cylinder
@@ -19,7 +19,7 @@ class Area {
 
     // Area of a Hemisphere
     fun hemisphere(radius: Double): Double {
-        return (pi() * radius * radius) * 3
+        return 3 * (pi() * radius * radius)
     }
 
     // Area of a Parallelogram
@@ -34,21 +34,21 @@ class Area {
 
     // Area of a Sphere
     fun sphere(radius: Double): Double {
-        return (pi() * radius * radius) * 4
+        return 4 * (pi() * radius * radius) 
     }
 
     // Area of a Square
-    fun square(length: Double): Double {
-        return length * length
+    fun square(length: Double, width: Double): Double {
+        return length * width
     }
 
     // Area of a Trapezium
     fun trapezium(baseOne: Double, baseTwo: Double, height: Double): Double {
-        return (baseOne + baseTwo) * height / 2
+        return (1 / 2) * (baseOne + baseTwo) * height
     }
 
     // Area of a Triangle
     fun triangle(base: Double, height: Double): Double {
-        return base * height / 2
+        return (1 / 2) * base * height
     }
 }
