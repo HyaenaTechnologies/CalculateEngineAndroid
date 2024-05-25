@@ -14,7 +14,7 @@ class Area {
 
     // Area of a Cylinder
     fun cylinder(height: Double, radius: Double): Double {
-        return (2 * pi() * radius * radius) + (2 * height * pi() * radius)
+        return (2 * height * pi() * radius) + (2 * pi() * radius * radius)
     }
 
     // Area of a Hemisphere
