@@ -78,6 +78,7 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.2.1")
     implementation("androidx.compose.runtime:runtime:$androidx_compose")
     implementation("androidx.compose.ui:ui:$androidx_compose")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.7")
     implementation("androidx.compose.ui:ui-tooling:$androidx_compose")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.core:core-ktx:1.13.1")
