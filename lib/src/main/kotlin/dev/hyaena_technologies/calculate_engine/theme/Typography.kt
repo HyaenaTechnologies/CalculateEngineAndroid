@@ -6,28 +6,33 @@ import androidx.compose.ui.text.googlefonts.Font
 import androidx.compose.ui.text.googlefonts.GoogleFont
 import dev.hyaena_technologies.calculate_engine.R
 
+// Font Provider
 val provider: GoogleFont.Provider = GoogleFont.Provider(
+    certificates = R.array.com_google_android_gms_fonts_certs,
     providerAuthority = "com.google.android.gms.fonts",
-    providerPackage = "com.google.android.gms",
-    certificates = R.array.com_google_android_gms_fonts_certs
+    providerPackage = "com.google.android.gms"
 )
 
+// Body Font Family
 val bodyFontFamily: FontFamily = FontFamily(
     Font(
-        googleFont = GoogleFont("Red Hat Display"),
         fontProvider = provider,
+        googleFont = GoogleFont("Red Hat Display"),
     )
 )
 
+// Display Font Family
 val displayFontFamily: FontFamily = FontFamily(
     Font(
-        googleFont = GoogleFont("JetBrains Mono"),
         fontProvider = provider,
+        googleFont = GoogleFont("JetBrains Mono"),
     )
 )
 
+// Baseline Typography
 val baseline: Typography = Typography()
 
+// Calculate Engine Typography
 val calculateEngineTypography: Typography = Typography(
     displayLarge = baseline.displayLarge.copy(fontFamily = displayFontFamily),
     displayMedium = baseline.displayMedium.copy(fontFamily = displayFontFamily),
