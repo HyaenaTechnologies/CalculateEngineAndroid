@@ -12,11 +12,11 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 
+// Home Route Top App Bar
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun HomeRouteTopBar() {
-    val homeRouteTopBarScrollBehavior =
-        TopAppBarDefaults.enterAlwaysScrollBehavior()
+fun HomeTopAppBar() {
+    val topAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     TopAppBar(
         actions = {
             IconButton(onClick = {}) {
@@ -32,7 +32,7 @@ fun HomeRouteTopBar() {
                 )
             }
         },
-        scrollBehavior = homeRouteTopBarScrollBehavior,
+        scrollBehavior = topAppBarScrollBehavior,
         title = {
             Text(
                 "Home",

@@ -19,7 +19,7 @@ fun HomeRoute() {
     ) {
         Scaffold(
             bottomBar = {
-                HomeRouteBottomBar()
+                HomeNavigationBar()
             },
             content = { innerPadding ->
                 LazyColumn(
@@ -30,11 +30,11 @@ fun HomeRoute() {
                 }
             },
             drawerContent = {
-                HomeRouteDrawer()
+                HomeDrawer()
             },
             drawerElevation = 6.dp,
             topBar = {
-                HomeRouteTopBar()
+                HomeTopAppBar()
             },
         )
     }

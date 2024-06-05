@@ -4,12 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import dev.hyaena_technologies.calculate_engine.theme.CalculateEngineTheme
 import dev.hyaena_technologies.calculate_engine.widgets.HomeRoute
 
+// Main Activity: Main Entrypoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +18,7 @@ class MainActivity : ComponentActivity() {
             CalculateEngineTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background,
+                    color = MaterialTheme.colorScheme.background,
                 ) {
                     HomeRoute()
                 }

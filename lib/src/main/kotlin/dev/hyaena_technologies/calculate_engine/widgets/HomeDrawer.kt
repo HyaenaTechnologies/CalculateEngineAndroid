@@ -26,21 +26,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
+// Home Route Drawer
 @Composable
-fun HomeRouteDrawer() {
-    val homeRouteDrawerItemList = listOf(
+fun HomeDrawer() {
+    val homeDrawerItemList = listOf(
         Icons.Default.Favorite,
         Icons.Default.Face,
         Icons.Default.Email,
     )
-    val homeRouteDrawerScope = rememberCoroutineScope()
-    val homeRouteDrawerState = rememberDrawerState(DrawerValue.Closed)
-    val homeRouteSelectedDrawerItem = remember {
-        mutableStateOf(homeRouteDrawerItemList[0])
+    val homeDrawerScope = rememberCoroutineScope()
+    val homeDrawerState = rememberDrawerState(DrawerValue.Closed)
+    val selectedItem = remember {
+        mutableStateOf(homeDrawerItemList[0])
     }
-    BackHandler(enabled = homeRouteDrawerState.isOpen) {
-        homeRouteDrawerScope.launch {
-            homeRouteDrawerState.close()
+    BackHandler(enabled = homeDrawerState.isOpen) {
+        homeDrawerScope.launch {
+            homeDrawerState.close()
         }
     }
     DismissibleNavigationDrawer(
@@ -55,7 +56,7 @@ fun HomeRouteDrawer() {
         drawerContent = {
             DismissibleDrawerSheet {
                 Spacer(Modifier.height(12.dp))
-                homeRouteDrawerItemList.forEach { homeRouteNavigationDrawerItem ->
+                homeDrawerItemList.forEach { homeRouteNavigationDrawerItem ->
                     NavigationDrawerItem(
                         icon = {
                             Icon(
@@ -66,19 +67,19 @@ fun HomeRouteDrawer() {
                         label = { Text(homeRouteNavigationDrawerItem.name) },
                         modifier = Modifier.padding(horizontal = 12.dp),
                         onClick = {
-                            homeRouteDrawerScope.launch {
-                                homeRouteDrawerState.close()
+                            homeDrawerScope.launch {
+                                homeDrawerState.close()
                             }
-                            homeRouteSelectedDrawerItem.value =
+                            selectedItem.value =
                                 homeRouteNavigationDrawerItem
                         },
                         selected = homeRouteNavigationDrawerItem ==
-                                homeRouteSelectedDrawerItem.value,
+                                selectedItem.value,
                     )
                 }
             }
         },
-        drawerState = homeRouteDrawerState,
+        drawerState = homeDrawerState,
         gesturesEnabled = true,
     )
 }
