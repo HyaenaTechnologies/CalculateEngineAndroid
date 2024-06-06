@@ -30,7 +30,7 @@ fun HomeRoute() {
                 }
             },
             drawerContent = {
-                HomeDrawer()
+                StatelessDrawer()
             },
             drawerElevation = 6.dp,
             topBar = {
