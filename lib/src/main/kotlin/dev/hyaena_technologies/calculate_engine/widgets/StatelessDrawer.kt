@@ -12,15 +12,13 @@ import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.DismissibleDrawerSheet
 import androidx.compose.material3.DismissibleNavigationDrawer
-import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.DrawerState
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.material3.Text
-import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -30,19 +28,19 @@ import kotlinx.coroutines.launch
 // Stateless Drawer Widget
 @Composable
 fun StatelessDrawer(
-    statefulDrawerScope: CoroutineScope = rememberCoroutineScope()
+    statelessDrawerScope: CoroutineScope,
+    statelessDrawerState: DrawerState
 ) {
     val statelessDrawerItemList = listOf(
         Icons.Default.Favorite,
         Icons.Default.Face,
         Icons.Default.Email,
     )
-    val statelessDrawerState = rememberDrawerState(DrawerValue.Closed)
     val statelessDrawerSelectedItem = remember {
         mutableStateOf(statelessDrawerItemList[0])
     }
     BackHandler(enabled = statelessDrawerState.isOpen) {
-        statefulDrawerScope.launch {
+        statelessDrawerScope.launch {
             statelessDrawerState.close()
         }
     }
@@ -69,7 +67,7 @@ fun StatelessDrawer(
                         label = { Text(homeRouteNavigationDrawerItem.name) },
                         modifier = Modifier.padding(horizontal = 12.dp),
                         onClick = {
-                            statefulDrawerScope.launch {
+                            statelessDrawerScope.launch {
                                 statelessDrawerState.close()
                             }
                             statelessDrawerSelectedItem.value =

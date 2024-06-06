@@ -6,7 +6,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import dev.hyaena_technologies.calculate_engine.R
 
-// Stateless Navigation Bar
+// Stateless Navigation Bar Widget
 @Composable
 fun StatelessNavigationBar() {
     NavigationBar {

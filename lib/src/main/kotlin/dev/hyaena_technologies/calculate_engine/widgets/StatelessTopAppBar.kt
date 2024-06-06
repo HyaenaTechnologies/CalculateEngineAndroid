@@ -9,14 +9,15 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 
-// Home Route Top App Bar
+// Stateless Top App Bar Widget
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun HomeTopAppBar() {
-    val topAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+fun StatelessTopAppBar(
+    appBarScroll: TopAppBarScrollBehavior
+) {
     TopAppBar(
         actions = {
             IconButton(onClick = {}) {
@@ -32,7 +33,7 @@ fun HomeTopAppBar() {
                 )
             }
         },
-        scrollBehavior = topAppBarScrollBehavior,
+        scrollBehavior = appBarScroll,
         title = {
             Text(
                 "Home",

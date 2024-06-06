@@ -18,8 +18,6 @@
 
 [Stax]: https://openstax.org
 
-[VSCode]: https://code.visualstudio.com/docs
-
 <a href="https://github.com/HyaenaTechnologies/calculate_engine_android">
   <h1>
     <picture>
@@ -45,7 +43,6 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 - [JetBrains Fleet][Fleet]
 - [Jetpack Compose][Compose]
 - [Maven Package Manager][Maven]
-- [Visual Studio Code][VSCode]
 
 ```shell
 git clone
