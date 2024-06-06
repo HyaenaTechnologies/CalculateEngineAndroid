@@ -2,7 +2,7 @@ package dev.hyaena_technologies.calculate_engine.logic.math
 
 // Exponential Power of Objects
 fun Power(value: Double, exponent: Double): Double {
-    var sum: Double = power(value, exponent / 2)
+    var sum: Double = Power(value, exponent / 2)
 
     if (exponent == 0.0) {
         return 1.0

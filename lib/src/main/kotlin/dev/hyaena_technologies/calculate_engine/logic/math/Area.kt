@@ -4,7 +4,7 @@ package dev.hyaena_technologies.calculate_engine.logic.math
 class Area {
     // Area of a Circle
     fun Circle(radius: Double): Double {
-        return pi() * (radius * radius)
+        return Pi() * (radius * radius)
     }
 
     // Area of a Cube
