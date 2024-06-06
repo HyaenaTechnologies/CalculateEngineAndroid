@@ -6,9 +6,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import dev.hyaena_technologies.calculate_engine.R
 
-// Home Route Navigation Bar
+// Stateless Navigation Bar
 @Composable
-fun HomeNavigationBar() {
+fun StatelessNavigationBar() {
     NavigationBar {
         NavigationBarItem(
             alwaysShowLabel = false,

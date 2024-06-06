@@ -20,6 +20,7 @@ import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -29,20 +30,20 @@ import kotlinx.coroutines.launch
 // Stateless Drawer Widget
 @Composable
 fun StatelessDrawer(
-    homeDrawerScope: CoroutineScope
+    statefulDrawerScope: CoroutineScope = rememberCoroutineScope()
 ) {
-    val homeDrawerItemList = listOf(
+    val statelessDrawerItemList = listOf(
         Icons.Default.Favorite,
         Icons.Default.Face,
         Icons.Default.Email,
     )
-    val homeDrawerState = rememberDrawerState(DrawerValue.Closed)
-    val selectedItem = remember {
-        mutableStateOf(homeDrawerItemList[0])
+    val statelessDrawerState = rememberDrawerState(DrawerValue.Closed)
+    val statelessDrawerSelectedItem = remember {
+        mutableStateOf(statelessDrawerItemList[0])
     }
-    BackHandler(enabled = homeDrawerState.isOpen) {
-        homeDrawerScope.launch {
-            homeDrawerState.close()
+    BackHandler(enabled = statelessDrawerState.isOpen) {
+        statefulDrawerScope.launch {
+            statelessDrawerState.close()
         }
     }
     DismissibleNavigationDrawer(
@@ -57,7 +58,7 @@ fun StatelessDrawer(
         drawerContent = {
             DismissibleDrawerSheet {
                 Spacer(Modifier.height(12.dp))
-                homeDrawerItemList.forEach { homeRouteNavigationDrawerItem ->
+                statelessDrawerItemList.forEach { homeRouteNavigationDrawerItem ->
                     NavigationDrawerItem(
                         icon = {
                             Icon(
@@ -68,19 +69,19 @@ fun StatelessDrawer(
                         label = { Text(homeRouteNavigationDrawerItem.name) },
                         modifier = Modifier.padding(horizontal = 12.dp),
                         onClick = {
-                            homeDrawerScope.launch {
-                                homeDrawerState.close()
+                            statefulDrawerScope.launch {
+                                statelessDrawerState.close()
                             }
-                            selectedItem.value =
+                            statelessDrawerSelectedItem.value =
                                 homeRouteNavigationDrawerItem
                         },
                         selected = homeRouteNavigationDrawerItem ==
-                                selectedItem.value,
+                                statelessDrawerSelectedItem.value,
                     )
                 }
             }
         },
-        drawerState = homeDrawerState,
+        drawerState = statelessDrawerState,
         gesturesEnabled = true,
     )
 }

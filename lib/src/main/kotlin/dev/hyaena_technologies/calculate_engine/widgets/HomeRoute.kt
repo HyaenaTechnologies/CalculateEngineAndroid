@@ -3,9 +3,9 @@ package dev.hyaena_technologies.calculate_engine.widgets
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -14,12 +14,12 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun HomeRoute() {
     Surface(
-        color = MaterialTheme.colors.background,
+        color = MaterialTheme.colorScheme.background,
         modifier = Modifier.fillMaxSize(),
     ) {
         Scaffold(
             bottomBar = {
-                HomeNavigationBar()
+                StatelessNavigationBar()
             },
             content = { innerPadding ->
                 LazyColumn(

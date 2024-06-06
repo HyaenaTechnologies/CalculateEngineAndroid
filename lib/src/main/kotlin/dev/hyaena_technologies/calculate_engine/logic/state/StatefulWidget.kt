@@ -12,7 +12,7 @@ class StatefulWidget(
     // Stateful Drawer Widget
     @Composable
     fun StatefulDrawer() {
-        val widgetScope = StatefulWidget(rememberCoroutineScope())
-        StatelessDrawer(homeDrawerScope = widgetScope.scope)
+        val statefulDrawerScope = StatefulWidget(rememberCoroutineScope())
+        StatelessDrawer(statefulDrawerScope.scope)
     }
 }
