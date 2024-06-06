@@ -4,7 +4,7 @@ package dev.hyaena_technologies.calculate_engine.logic.math
 class Volume {
     // Volume of a Cone
     fun Cone(height: Double, radius: Double): Double {
-        return (1 / 3) * (pi() * radius * radius) * height
+        return (1 / 3) * (Pi() * radius * radius) * height
     }
 
     // Volume of a Cube
@@ -19,12 +19,12 @@ class Volume {
 
     // Volume of a Cylinder
     fun Cylinder(height: Double, radius: Double): Double {
-        return pi() * height * (radius * radius)
+        return Pi() * height * (radius * radius)
     }
 
     // Volume of a Hemisphere
     fun Hemisphere(radius: Double): Double {
-        return (2 / 3) * (pi() * radius * radius * radius)
+        return (2 / 3) * (Pi() * radius * radius * radius)
     }
 
     // Volume of a Prism
@@ -39,6 +39,6 @@ class Volume {
 
     // Volume of a Sphere
     fun Sphere(radius: Double): Double {
-        return (4 / 3) * (pi() * radius * radius * radius)
+        return (4 / 3) * (Pi() * radius * radius * radius)
     }
 }

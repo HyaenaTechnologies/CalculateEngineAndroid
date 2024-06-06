@@ -14,12 +14,12 @@ class Area {
 
     // Area of a Cylinder
     fun Cylinder(height: Double, radius: Double): Double {
-        return (2 * height * pi() * radius) + (2 * pi() * radius * radius)
+        return (2 * height * Pi() * radius) + (2 * Pi() * radius * radius)
     }
 
     // Area of a Hemisphere
     fun Hemisphere(radius: Double): Double {
-        return 3 * (pi() * radius * radius)
+        return 3 * (Pi() * radius * radius)
     }
 
     // Area of a Parallelogram
@@ -34,7 +34,7 @@ class Area {
 
     // Area of a Sphere
     fun Sphere(radius: Double): Double {
-        return 4 * (pi() * radius * radius) 
+        return 4 * (Pi() * radius * radius) 
     }
 
     // Area of a Square
