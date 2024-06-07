@@ -18,34 +18,30 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.CoroutineScope
 
 // Home Route Stateful Scaffold Widget
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
 fun StatefulScaffold() {
     val drawerScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
     val scroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
-    Surface(
-        modifier = Modifier.fillMaxSize(),
-    ) {
-        Scaffold(
-            bottomBar = {
-                StatelessNavigationBar()
-            },
-            content = { innerPadding ->
-                LazyColumn(
-                    modifier = Modifier.consumeWindowInsets(innerPadding),
-                    contentPadding = innerPadding
-                ) {
+    Scaffold(
+        bottomBar = {
+            StatelessNavigationBar()
+        },
+        content = { innerPadding ->
+            LazyColumn(
+                modifier = Modifier.consumeWindowInsets(innerPadding),
+                contentPadding = innerPadding
+            ) {
 
-                }
-            },
-            drawerContent = {
-                StatelessDrawer(drawerScope, drawerState)
-            },
-            drawerElevation = 6.dp,
-            topBar = {
-                StatelessTopAppBar(scroll)
-            },
-        )
-    }
+            }
+        },
+        drawerContent = {
+            StatelessDrawer(drawerScope, drawerState)
+        },
+        drawerElevation = 6.dp,
+        topBar = {
+            StatelessTopAppBar(scroll)
+        },
+    )
 }
