@@ -1,7 +1,9 @@
 package dev.hyaena_technologies.calculate_engine.widgets
 
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.Scaffold
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
@@ -21,7 +23,8 @@ import kotlinx.coroutines.CoroutineScope
 fun StatefulScaffold() {
     val drawerScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
-    val scroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val widgetScrollBehavior: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val widgetScrollState: ScrollState = rememberScrollState()
     Scaffold(
         bottomBar = {
             StatelessNavigationBar()
@@ -35,11 +38,11 @@ fun StatefulScaffold() {
             }
         },
         drawerContent = {
-            StatelessDrawer(drawerScope, drawerState)
+            StatelessDrawer(drawerScope, drawerState, widgetScrollState)
         },
         drawerElevation = 6.dp,
         topBar = {
-            StatelessTopAppBar(scroll)
+            StatelessTopAppBar(widgetScrollBehavior)
         },
     )
 }
