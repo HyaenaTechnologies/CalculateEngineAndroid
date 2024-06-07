@@ -1,13 +1,11 @@
 package dev.hyaena_technologies.calculate_engine.widgets
 
 import androidx.compose.foundation.layout.consumeWindowInsets
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Scaffold
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Surface
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.rememberDrawerState
@@ -30,8 +28,8 @@ fun StatefulScaffold() {
         },
         content = { innerPadding ->
             LazyColumn(
-                modifier = Modifier.consumeWindowInsets(innerPadding),
-                contentPadding = innerPadding
+                contentPadding = innerPadding,
+                modifier = Modifier.consumeWindowInsets(innerPadding)
             ) {
 
             }

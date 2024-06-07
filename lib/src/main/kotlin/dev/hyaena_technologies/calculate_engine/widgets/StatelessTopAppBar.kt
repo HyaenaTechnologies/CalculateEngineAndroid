@@ -39,7 +39,6 @@ fun StatelessTopAppBar(
                 "Home",
                 maxLines = 1,
                 softWrap = true,
-                style = MaterialTheme.typography.headlineMedium,
             )
         },
     )
