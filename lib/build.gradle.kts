@@ -65,7 +65,7 @@ val io_ktor: String = "2.3.11"
 val jetbrains_kotlin: String = "1.9.24"
 val org_jetbrains_kotlinx_coroutines: String = "1.8.1"
 val org_jetbrains_kotlinx_io: String = "0.3.5"
-val org_jetbrains_kotlinx_serialization = "1.6.3"
+val org_jetbrains_kotlinx_serialization = "1.7.0"
 
 dependencies {
     // Android
