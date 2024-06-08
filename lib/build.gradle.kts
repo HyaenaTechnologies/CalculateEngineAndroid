@@ -64,12 +64,12 @@ val androidx_lifecycle: String = "2.8.0"
 val io_ktor: String = "2.3.11"
 val jetbrains_kotlin: String = "1.9.24"
 val org_jetbrains_kotlinx_coroutines: String = "1.8.1"
-val org_jetbrains_kotlinx_io: String = "0.3.5"
-val org_jetbrains_kotlinx_serialization = "1.6.3"
+val org_jetbrains_kotlinx_io: String = "0.4.0"
+val org_jetbrains_kotlinx_serialization = "1.7.0"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha04")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha05")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
