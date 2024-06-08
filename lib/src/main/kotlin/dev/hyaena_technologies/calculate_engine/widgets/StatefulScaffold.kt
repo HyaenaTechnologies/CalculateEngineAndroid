@@ -23,7 +23,7 @@ import kotlinx.coroutines.CoroutineScope
 fun StatefulScaffold() {
     val drawerScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
-    val widgetScrollBehavior: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     val widgetScrollState: ScrollState = rememberScrollState()
     Scaffold(
         bottomBar = {
@@ -42,7 +42,7 @@ fun StatefulScaffold() {
         },
         drawerElevation = 6.dp,
         topBar = {
-            StatelessTopAppBar(widgetScrollBehavior)
+            StatelessTopAppBar(topBarScroll)
         },
     )
 }

@@ -4,8 +4,6 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.DismissibleDrawerSheet
 import androidx.compose.material3.DismissibleNavigationDrawer
@@ -15,8 +13,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import dev.hyaena_technologies.calculate_engine.R
+import dev.hyaena_technologies.calculate_engine.theme.bodyFontFamily
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -46,12 +44,18 @@ fun StatelessDrawer(
                 Column(
                     Modifier.verticalScroll(statelessDrawerScrollState)
                 ) {
-                    Spacer(Modifier.height(12.dp))
                     NavigationDrawerItem(
                         icon = {
-                            R.raw.analysis
+                            R.raw.parabola
                         },
-                        label = { Text("Algebra") },
+                        label = {
+                            Text(
+                                "Algebra",
+                                fontFamily = bodyFontFamily,
+                                maxLines = 1,
+                                softWrap = true,
+                            )
+                        },
                         modifier = Modifier.align(Alignment.CenterHorizontally),
                         onClick = {},
                         selected = false,
