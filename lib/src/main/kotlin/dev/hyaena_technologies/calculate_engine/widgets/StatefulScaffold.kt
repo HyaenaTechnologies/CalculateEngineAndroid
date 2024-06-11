@@ -21,7 +21,7 @@ import kotlinx.coroutines.CoroutineScope
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
 fun StatefulScaffold() {
-    val drawerScope: CoroutineScope = rememberCoroutineScope()
+    val widgetScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     val widgetScrollState: ScrollState = rememberScrollState()
@@ -38,7 +38,7 @@ fun StatefulScaffold() {
             }
         },
         drawerContent = {
-            StatelessDrawer(drawerScope, drawerState, widgetScrollState)
+            StatelessDrawer(widgetScope, drawerState, widgetScrollState)
         },
         drawerElevation = 6.dp,
         topBar = {
