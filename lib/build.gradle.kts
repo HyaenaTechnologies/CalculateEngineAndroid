@@ -59,11 +59,12 @@ android {
     ndkVersion = "27.0.11718014"
 }
 
-val androidx_compose: String = "1.6.7"
-val androidx_lifecycle: String = "2.8.0"
+val androidx_compose: String = "1.6.8"
+val androidx_lifecycle: String = "2.8.2"
+val androidx_navigation: String = "2.7.7"
 val io_ktor: String = "2.3.11"
 val jetbrains_kotlin: String = "1.9.24"
-val org_jetbrains_kotlinx_coroutines: String = "1.8.1"
+val org_jetbrains_kotlinx_coroutines: String = "1.9.0-RC"
 val org_jetbrains_kotlinx_io: String = "0.4.0"
 val org_jetbrains_kotlinx_serialization = "1.7.0"
 
@@ -78,13 +79,15 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.2.1")
     implementation("androidx.compose.runtime:runtime:$androidx_compose")
     implementation("androidx.compose.ui:ui:$androidx_compose")
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.7")
+    implementation("androidx.compose.ui:ui-text-google-fonts:$androidx_compose")
     implementation("androidx.compose.ui:ui-tooling:$androidx_compose")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle")
-    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.navigation:navigation-compose:$androidx_navigation")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$androidx_navigation")
+    implementation("androidx.navigation:navigation-ui-ktx:$androidx_navigation")
     implementation("androidx.paging:paging-compose:3.3.0")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
@@ -126,7 +129,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-properties:$org_jetbrains_kotlinx_serialization")
     implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0")
     // Tests
-    testImplementation("androidx.compose.ui:ui-test:$androidx_compose")
+    androidTestImplementation("androidx.compose.ui:ui-test:$androidx_compose")
+    androidTestImplementation("androidx.navigation:navigation-testing:$androidx_navigation")
     testImplementation("io.ktor:ktor-client-tests:$io_ktor")
     testImplementation("io.ktor:ktor-client-content-negotiation-tests:$io_ktor")
     testImplementation("io.ktor:ktor-serialization-tests:$io_ktor")
