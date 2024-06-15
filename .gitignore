@@ -9,4 +9,3 @@ captures
 .cxx
 .build/
 build/
-**/build/
