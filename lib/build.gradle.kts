@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.gradle.android.cache-fix")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -63,7 +64,7 @@ val androidx_compose: String = "1.6.8"
 val androidx_lifecycle: String = "2.8.2"
 val androidx_navigation: String = "2.7.7"
 val io_ktor: String = "2.3.11"
-val jetbrains_kotlin: String = "1.9.24"
+val jetbrains_kotlin: String = "2.0.0"
 val org_jetbrains_kotlinx_coroutines: String = "1.9.0-RC"
 val org_jetbrains_kotlinx_io: String = "0.4.0"
 val org_jetbrains_kotlinx_serialization = "1.7.0"
