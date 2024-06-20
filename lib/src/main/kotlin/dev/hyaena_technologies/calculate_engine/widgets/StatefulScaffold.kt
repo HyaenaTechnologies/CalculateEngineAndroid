@@ -15,15 +15,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.CoroutineScope
 
 // Home Route Stateful Scaffold Widget
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
 fun StatefulScaffold() {
-    val widgetScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val widgetScope: CoroutineScope = rememberCoroutineScope()
     val widgetScrollState: ScrollState = rememberScrollState()
     Scaffold(
         bottomBar = {

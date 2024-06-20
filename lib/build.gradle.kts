@@ -71,7 +71,7 @@ val org_jetbrains_kotlinx_serialization = "1.7.0"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha05")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha06")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
@@ -86,8 +86,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidx_lifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidx_lifecycle")
+    implementation("androidx.navigation:navigation-common-ktx:$androidx_navigation")
     implementation("androidx.navigation:navigation-compose:$androidx_navigation")
-    implementation("androidx.navigation:navigation-dynamic-features-fragment:$androidx_navigation")
     implementation("androidx.navigation:navigation-ui-ktx:$androidx_navigation")
     implementation("androidx.paging:paging-compose:3.3.0")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
