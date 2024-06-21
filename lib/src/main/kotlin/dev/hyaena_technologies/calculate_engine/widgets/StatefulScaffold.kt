@@ -15,8 +15,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.CoroutineScope
 
 // Home Route Stateful Scaffold Widget
