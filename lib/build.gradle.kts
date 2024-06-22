@@ -63,7 +63,7 @@ android {
 val androidx_compose: String = "1.6.8"
 val androidx_lifecycle: String = "2.8.2"
 val androidx_navigation: String = "2.7.7"
-val io_ktor: String = "2.3.11"
+val io_ktor: String = "2.3.12"
 val jetbrains_kotlin: String = "2.0.0"
 val org_jetbrains_kotlinx_coroutines: String = "1.9.0-RC"
 val org_jetbrains_kotlinx_io: String = "0.4.0"
@@ -71,7 +71,7 @@ val org_jetbrains_kotlinx_serialization = "1.7.0"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha06")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha07")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidx_compose")
     implementation("androidx.compose.compiler:compiler:1.5.14")

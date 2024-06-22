@@ -20,7 +20,7 @@ import kotlinx.coroutines.CoroutineScope
 // Home Route Stateful Scaffold Widget
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun StatefulScaffold() {
+fun HomeRoute() {
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     val widgetScope: CoroutineScope = rememberCoroutineScope()
