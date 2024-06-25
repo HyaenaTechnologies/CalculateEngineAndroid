@@ -1,4 +1,6 @@
-package dev.hyaena_technologies.calculate_engine.logic.math
+package dev.hyaena_technologies.calculate_engine.logic.math.geometry
+
+import dev.hyaena_technologies.calculate_engine.logic.math.constant.Pi
 
 // Volume of Objects
 class Volume {

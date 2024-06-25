@@ -1,4 +1,6 @@
-package dev.hyaena_technologies.calculate_engine.logic.math
+package dev.hyaena_technologies.calculate_engine.logic.math.geometry
+
+import dev.hyaena_technologies.calculate_engine.logic.math.constant.Pi
 
 // Area of Objects
 class Area {
@@ -34,7 +36,7 @@ class Area {
 
     // Area of a Sphere
     fun Sphere(radius: Double): Double {
-        return 4 * (Pi() * radius * radius) 
+        return 4 * (Pi() * radius * radius)
     }
 
     // Area of a Square

@@ -1,4 +1,4 @@
-package dev.hyaena_technologies.calculate_engine.logic.math
+package dev.hyaena_technologies.calculate_engine.logic.math.constant
 
 // Value of Pi
 fun Pi(): Double {

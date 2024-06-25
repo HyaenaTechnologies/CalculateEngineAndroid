@@ -5,22 +5,22 @@ class GraphModel(
     val edge: Double,
     val vertex: Double
 ) {
-    // Insert Edge to Graph
+    // Insert Edge
     fun InsertEdge() {
 
     }
 
-    // Insert Vertex to Graph
+    // Insert Vertex
     fun InsertVertex() {
 
     }
 
-    // Remove Edge in Graph
+    // Remove Edge
     fun RemoveEdge() {
 
     }
 
-    // Remove Vertex in Graph
+    // Remove Vertex
     fun RemoveVertex() {
 
     }
