@@ -1,29 +1,28 @@
 package dev.hyaena_technologies.calculate_engine.logic.physics
 
-// Definition of Objects
-class PhysicalObject {
-    // Density of Objects
-    fun Density(mass: Double, volume: Double): Double {
-        return mass / volume
-    }
+// Specfication of Physical Objects
 
-    // Energy of Objects
-    fun Energy(mass: Double, velocity: Double): Double {
-        return (1 / 2) * mass * (velocity * velocity)
-    }
+// Density of Objects
+fun Density(mass: Double, volume: Double): Double {
+    return mass / volume
+}
 
-    // Force of Objects
-    fun Force(mass: Double, acceleration: Double): Double {
-        return mass * acceleration
-    }
+// Energy of Objects
+fun Energy(mass: Double, velocity: Double): Double {
+    return (1 / 2) * mass * (velocity * velocity)
+}
 
-    // Pressure of Objects
-    fun Pressure(force: Double, acceleration: Double): Double {
-        return force / acceleration
-    }
+// Force of Objects
+fun Force(mass: Double, acceleration: Double): Double {
+    return mass * acceleration
+}
 
-    // Weight of Objects
-    fun Weight(mass: Double, gravitationalAcceleration: Double): Double {
-        return mass * gravitationalAcceleration
-    }
+// Pressure of Objects
+fun Pressure(force: Double, acceleration: Double): Double {
+    return force / acceleration
+}
+
+// Weight of Objects
+fun Weight(mass: Double, gravitationalAcceleration: Double): Double {
+    return mass * gravitationalAcceleration
 }
