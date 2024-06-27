@@ -44,7 +44,7 @@ fun MicrometersToCentimeters(micrometers: Double): Double {
 
 // Miles to Centimeters
 fun MilesToCentimeters(miles: Double): Double {
-    return miles * (1.609344 * 100000)
+    return miles * 160934.4
 }
 
 // Millimeters to Centimeters
@@ -59,7 +59,7 @@ fun NanometersToCentimeters(nanometers: Double): Double {
 
 // Nautical Miles to Centimeters
 fun NauticalMilesToCentimeters(nauticalMiles: Double): Double {
-    return nauticalMiles * (1.852001 * 100000)
+    return nauticalMiles * 185200.1
 }
 
 // Picometers to Centimeters
