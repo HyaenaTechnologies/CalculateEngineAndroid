@@ -13,7 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import dev.hyaena_technologies.calculate_engine.R
+import dev.hyaenaTechnologies.calculateEngine.R
 import dev.hyaenaTechnologies.calculateEngine.theme.bodyFontFamily
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

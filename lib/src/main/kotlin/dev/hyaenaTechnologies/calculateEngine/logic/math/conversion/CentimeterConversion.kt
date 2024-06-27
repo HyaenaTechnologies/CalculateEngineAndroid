@@ -1,4 +1,4 @@
-package dev.hyaenaTechnologies.calculateTngine.logic.math.conversion
+package dev.hyaenaTechnologies.calculateEngine.logic.math.conversion
 
 // Centimeter Conversion
 

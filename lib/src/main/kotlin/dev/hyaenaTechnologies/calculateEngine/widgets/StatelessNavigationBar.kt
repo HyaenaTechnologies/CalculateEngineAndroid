@@ -4,7 +4,7 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import dev.hyaena_technologies.calculate_engine.R
+import dev.hyaenaTechnologies.calculateEngine.R
 import dev.hyaenaTechnologies.calculateEngine.theme.bodyFontFamily
 
 // Stateless Navigation Bar Widget

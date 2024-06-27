@@ -1,4 +1,4 @@
-package dev.hyaena_technologies.calculate_engine.model
+package dev.hyaenaTechnologies.calculateEngine.model
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
