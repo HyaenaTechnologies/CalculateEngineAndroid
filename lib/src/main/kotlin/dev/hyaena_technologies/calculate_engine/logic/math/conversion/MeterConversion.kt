@@ -67,7 +67,7 @@ fun PicometersToMeters(picometers: Double): Double {
     return picometers * -1000000000000
 }
 
-// Yards to Centimeters
-fun YardsToCentimeters(yards: Double): Double {
+// Yards to Meters
+fun YardsToMeters(yards: Double): Double {
     return yards * 0.9144
 }
