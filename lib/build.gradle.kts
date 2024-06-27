@@ -34,7 +34,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "dev.hyaena_technologies.calculate_engine"
+        applicationId = "dev.hyaenaTechnologies.calculateEngine"
         minSdk = 21
         targetSdk = 34
         testInstrumentationRunner = "androidx.test.runner"
@@ -49,7 +49,7 @@ android {
         jvmTarget = "17"
     }
 
-    namespace = "dev.hyaena_technologies.calculate_engine"
+    namespace = "dev.hyaenaTechnologies.calculateEngine"
 
     packaging {
         resources {
@@ -67,7 +67,7 @@ val ioKtor: String = "2.3.12"
 val JetBrainsKotlin: String = "2.0.0"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC"
 val orgJetBrainsKotlinXIO: String = "0.4.0"
-val orgJetBrainsKotlinXSerialization = "1.7.0"
+val orgJetBrainsKotlinXSerialization = "1.7.1"
 
 dependencies {
     // Android
