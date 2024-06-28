@@ -64,14 +64,14 @@ val androidxCompose: String = "1.6.8"
 val androidxLifecycle: String = "2.8.2"
 val androidxNavigation: String = "2.7.7"
 val ioKtor: String = "2.3.12"
-val JetBrainsKotlin: String = "2.0.0"
+val jetBrainsKotlin: String = "2.0.0"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC"
 val orgJetBrainsKotlinXIO: String = "0.4.0"
-val orgJetBrainsKotlinXSerialization = "1.7.1"
+val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha07")
+    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha08")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
@@ -118,7 +118,7 @@ dependencies {
     implementation("io.ktor:ktor-websockets:$ioKtor")
     implementation("io.ktor:ktor-websocket-serialization:$ioKtor")
     // JetBrains
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:$JetBrainsKotlin")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$jetBrainsKotlin")
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
@@ -136,7 +136,7 @@ dependencies {
     testImplementation("io.ktor:ktor-client-content-negotiation-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-kotlinx-tests:$ioKtor")
-    testImplementation("org.jetbrains.kotlin:kotlin-test:$JetBrainsKotlin")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$jetBrainsKotlin")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinXCoroutines")
     testImplementation("org.jetbrains.kotlinx:lincheck:2.32")
 }

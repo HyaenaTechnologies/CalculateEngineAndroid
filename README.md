@@ -26,7 +26,7 @@
   </h1>
 </a>
 
-[![Anroid Workflow](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml)
+[![Android Workflow](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml)
 
 # Calculate Engine
 

@@ -1,6 +1,6 @@
 package dev.calculate_engine.logic.physics
 
-// Specfication of Physical Objects
+// Specification of Physical Objects
 
 // Density of Objects
 fun density(mass: Double, volume: Double): Double {
