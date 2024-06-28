@@ -1,12 +1,12 @@
 package dev.calculate_engine.logic.math.geometry
 
-import dev.hyaenaTechnologies.calculateEngine.logic.math.constant.Pi
+import dev.calculate_engine.logic.math.constant.pi
 
 // Area of Objects
 
 // Area of a Circle
 fun circleArea(radius: Double): Double {
-    return Pi() * (radius * radius)
+    return pi() * (radius * radius)
 }
 
 // Area of a Cube
@@ -16,12 +16,12 @@ fun cubeArea(length: Double, width: Double): Double {
 
 // Area of a Cylinder
 fun cylinderArea(height: Double, radius: Double): Double {
-    return (2 * height * Pi() * radius) + (2 * Pi() * radius * radius)
+    return (2 * height * pi() * radius) + (2 * pi() * radius * radius)
 }
 
 // Area of a Hemisphere
 fun hemisphereArea(radius: Double): Double {
-    return 3 * (Pi() * radius * radius)
+    return 3 * (pi() * radius * radius)
 }
 
 // Area of a Parallelogram
@@ -36,7 +36,7 @@ fun rectangleArea(length: Double, width: Double): Double {
 
 // Area of a Sphere
 fun sphereArea(radius: Double): Double {
-    return 4 * (Pi() * radius * radius)
+    return 4 * (pi() * radius * radius)
 }
 
 // Area of a Square

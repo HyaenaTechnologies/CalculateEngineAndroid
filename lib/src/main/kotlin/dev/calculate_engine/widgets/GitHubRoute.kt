@@ -1,4 +1,4 @@
-package dev.hyaenaTechnologies.calculateEngine.widgets
+package dev.calculate_engine.widgets
 
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.lazy.LazyColumn
@@ -8,6 +8,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import dev.calculate_engine.widgets.StatelessTopAppBar
 
 // GitHub Route: Stateful
 @Composable

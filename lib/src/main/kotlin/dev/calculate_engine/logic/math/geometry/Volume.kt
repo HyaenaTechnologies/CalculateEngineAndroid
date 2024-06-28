@@ -1,12 +1,12 @@
 package dev.calculate_engine.logic.math.geometry
 
-import dev.hyaenaTechnologies.calculateEngine.logic.math.constant.Pi
+import dev.calculate_engine.logic.math.constant.pi
 
 // Volume of Objects
 
 // Volume of a Cone
 fun coneVolume(height: Double, radius: Double): Double {
-    return (1 / 3) * (Pi() * radius * radius) * height
+    return (1 / 3) * (pi() * radius * radius) * height
 }
 
 // Volume of a Cube
@@ -21,12 +21,12 @@ fun cuboidVolume(height: Double, length: Double, width: Double): Double {
 
 // Volume of a Cylinder
 fun cylinderVolume(height: Double, radius: Double): Double {
-    return Pi() * height * (radius * radius)
+    return pi() * height * (radius * radius)
 }
 
 // Volume of a Hemisphere
 fun hemisphereVolume(radius: Double): Double {
-    return (2 / 3) * (Pi() * radius * radius * radius)
+    return (2 / 3) * (pi() * radius * radius * radius)
 }
 
 // Volume of a Prism
@@ -41,5 +41,5 @@ fun pyramidVolume(baseArea: Double, height: Double): Double {
 
 // Volume of a Sphere
 fun sphereVolume(radius: Double): Double {
-    return (4 / 3) * (Pi() * radius * radius * radius)
+    return (4 / 3) * (pi() * radius * radius * radius)
 }

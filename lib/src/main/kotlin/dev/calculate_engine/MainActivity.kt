@@ -8,7 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import dev.calculate_engine.theme.CalculateEngineTheme
-import dev.hyaenaTechnologies.calculateEngine.widgets.HomeRoute
+import dev.calculate_engine.widgets.HomeRoute
 
 // Main Activity: Main Entrypoint
 class MainActivity : ComponentActivity() {
