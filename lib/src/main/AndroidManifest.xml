@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/hce_res"
-        android:label="Hyaena Calculate Engine"
+        android:label="Calculate Engine"
         android:roundIcon="@mipmap/hce_res_round"
         android:supportsRtl="true"
         android:theme="@style/LaunchTheme"

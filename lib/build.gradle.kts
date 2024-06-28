@@ -34,7 +34,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "dev.hyaenaTechnologies.calculateEngine"
+        applicationId = "dev.calculate_engine"
         minSdk = 21
         targetSdk = 34
         testInstrumentationRunner = "androidx.test.runner"
@@ -49,7 +49,7 @@ android {
         jvmTarget = "17"
     }
 
-    namespace = "dev.hyaenaTechnologies.calculateEngine"
+    namespace = "dev.calculate_engine"
 
     packaging {
         resources {
