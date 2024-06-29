@@ -12,7 +12,7 @@
         android:theme="@style/LaunchTheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="calculate_engine.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:hardwareAccelerated="true"
