@@ -63,7 +63,7 @@ fun nauticalMilesToCentimeters(nauticalMiles: Double): Double {
 }
 
 // Picometers to Centimeters
-fun nicometersToCentimeters(picometers: Double): Double {
+fun picometersToCentimeters(picometers: Double): Double {
     return picometers * -10000000000
 }
 
