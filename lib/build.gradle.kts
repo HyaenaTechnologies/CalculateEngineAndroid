@@ -34,7 +34,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "calculate_engine"
+        applicationId = "dev.calculate_engine"
         minSdk = 21
         targetSdk = 34
         testInstrumentationRunner = "androidx.test.runner"
@@ -49,7 +49,7 @@ android {
         jvmTarget = "17"
     }
 
-    namespace = "calculate_engine"
+    namespace = "dev.calculate_engine"
 
     packaging {
         resources {
