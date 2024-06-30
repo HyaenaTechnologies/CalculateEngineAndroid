@@ -1,6 +1,6 @@
 package dev.calculate_engine.math.conversion
 
-// Meter Conversion
+// Inch Conversion
 
 // Centimeters to Inches
 fun centimetersToInches(centimeters: Double): Double {
