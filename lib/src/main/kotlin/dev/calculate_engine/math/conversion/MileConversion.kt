@@ -1,6 +1,6 @@
 package dev.calculate_engine.math.conversion
 
-// Inch Conversion
+// Mile Conversion
 
 // Centimeters to Miles
 fun centimetersToMiles(centimeters: Double): Double {
