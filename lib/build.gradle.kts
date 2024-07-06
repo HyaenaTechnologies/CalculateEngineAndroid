@@ -63,6 +63,8 @@ android {
 val androidxCompose: String = "1.6.8"
 val androidxLifecycle: String = "2.8.3"
 val androidxNavigation: String = "2.7.7"
+val androidxTest: String = "1.6.1"
+val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.0"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC"
@@ -71,8 +73,8 @@ val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
-    implementation("com.android.tools.compose:compose-preview-detector:31.6.0-alpha08")
     implementation("androidx.activity:activity-compose:1.9.0")
+    implementation("androidx.camera:camera-viewfinder-compose:1.0.0-alpha02")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
@@ -84,6 +86,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling:$androidxCompose")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.fragment:fragment-compose:1.8.1")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidxLifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidxLifecycle")
     implementation("androidx.navigation:navigation-common-ktx:$androidxNavigation")
@@ -132,6 +135,14 @@ dependencies {
     // Tests
     androidTestImplementation("androidx.compose.ui:ui-test:$androidxCompose")
     androidTestImplementation("androidx.navigation:navigation-testing:$androidxNavigation")
+    androidTestImplementation("androidx.test:core-ktx:$androidxTest")
+    androidTestImplementation("androidx.test:monitor:1.7.1")
+    androidTestImplementation("androidx.test:orchestrator:$androidxTestServices")
+    androidTestImplementation("androidx.test:rules:$androidxTest")
+    androidTestImplementation("androidx.test:runner:$androidxTest")
+    androidTestImplementation("androidx.test.services:storage:$androidxTestServices")
+    androidTestImplementation("androidx.test.services:test-services:$androidxTestServices")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
     testImplementation("io.ktor:ktor-client-tests:$ioKtor")
     testImplementation("io.ktor:ktor-client-content-negotiation-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-tests:$ioKtor")
