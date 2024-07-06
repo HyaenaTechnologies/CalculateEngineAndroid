@@ -61,7 +61,7 @@ android {
 }
 
 val androidxCompose: String = "1.6.8"
-val androidxLifecycle: String = "2.8.2"
+val androidxLifecycle: String = "2.8.3"
 val androidxNavigation: String = "2.7.7"
 val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.0"
