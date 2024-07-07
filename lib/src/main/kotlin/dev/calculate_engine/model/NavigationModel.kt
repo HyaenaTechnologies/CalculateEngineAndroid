@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import dev.calculate_engine.widgets.BasicCalculatorRoute
+import dev.calculate_engine.widgets.ConversionCalculatorRoute
 import dev.calculate_engine.widgets.GitHubRoute
 import dev.calculate_engine.widgets.HomeRoute
 import dev.calculate_engine.widgets.OpenStaxRoute
@@ -20,7 +20,7 @@ fun NavigationModel(
         startDestination = initialDestination
     ) {
         composable(route = "Basic Calculator") {
-            BasicCalculatorRoute()
+            ConversionCalculatorRoute()
         }
 
         composable(route = "Home") {

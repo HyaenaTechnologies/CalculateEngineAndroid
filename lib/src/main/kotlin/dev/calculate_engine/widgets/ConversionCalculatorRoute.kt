@@ -9,10 +9,10 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
-// Basic Calculator Route: Stateful
+// Conversion Calculator Route: Stateful
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun BasicCalculatorRoute() {
+fun ConversionCalculatorRoute() {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         content = { innerPadding ->
