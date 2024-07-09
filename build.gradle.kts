@@ -7,8 +7,5 @@ plugins {
     id("io.ktor.plugin") version "2.3.12" apply false
     id("org.gradle.android.cache-fix") version "3.0.1" apply false
     id("org.jetbrains.kotlin.android") version "$orgJetBrainsKotlin" apply false
-    id("org.jetbrains.kotlin.jvm") version "$orgJetBrainsKotlin" apply false
-    id("org.jetbrains.kotlin.js") version "$orgJetBrainsKotlin" apply false
-    id("org.jetbrains.kotlin.multiplatform") version "$orgJetBrainsKotlin" apply false
     id("org.jetbrains.kotlin.plugin.compose") version "$orgJetBrainsKotlin" apply false
 }
