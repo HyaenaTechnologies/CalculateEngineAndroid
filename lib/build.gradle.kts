@@ -68,13 +68,12 @@ val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.0"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC"
-val orgJetBrainsKotlinXIO: String = "0.4.0"
+val orgJetBrainsKotlinXIO: String = "0.5.1"
 val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
     implementation("androidx.activity:activity-compose:1.9.0")
-    implementation("androidx.camera:camera-viewfinder-compose:1.0.0-alpha02")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
