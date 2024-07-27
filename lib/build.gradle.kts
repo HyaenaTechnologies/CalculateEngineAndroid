@@ -73,7 +73,7 @@ val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
-    implementation("androidx.activity:activity-compose:1.9.0")
+    implementation("androidx.activity:activity-compose:1.9.1")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
