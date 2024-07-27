@@ -73,7 +73,7 @@ val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
-    implementation("androidx.activity:activity-compose:1.9.0")
+    implementation("androidx.activity:activity-compose:1.9.1")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:1.5.14")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
@@ -85,13 +85,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling:$androidxCompose")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.fragment:fragment-compose:1.8.1")
+    implementation("androidx.fragment:fragment-compose:1.8.2")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidxLifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidxLifecycle")
     implementation("androidx.navigation:navigation-common-ktx:$androidxNavigation")
     implementation("androidx.navigation:navigation-compose:$androidxNavigation")
     implementation("androidx.navigation:navigation-ui-ktx:$androidxNavigation")
-    implementation("androidx.paging:paging-compose:3.3.0")
+    implementation("androidx.paging:paging-compose:3.3.1")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
