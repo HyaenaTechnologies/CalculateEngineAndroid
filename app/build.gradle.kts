@@ -61,7 +61,7 @@ android {
 }
 
 val androidxCompose: String = "1.6.8"
-val androidxLifecycle: String = "2.8.3"
+val androidxLifecycle: String = "2.8.4"
 val androidxNavigation: String = "2.7.7"
 val androidxTest: String = "1.6.1"
 val androidxTestServices: String = "1.5.0"
@@ -148,5 +148,5 @@ dependencies {
     testImplementation("io.ktor:ktor-serialization-kotlinx-tests:$ioKtor")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$jetBrainsKotlin")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinXCoroutines")
-    testImplementation("org.jetbrains.kotlinx:lincheck:2.32")
+    testImplementation("org.jetbrains.kotlinx:lincheck:2.33")
 }
