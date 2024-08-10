@@ -91,7 +91,7 @@ dependencies {
     implementation("androidx.navigation:navigation-common-ktx:$androidxNavigation")
     implementation("androidx.navigation:navigation-compose:$androidxNavigation")
     implementation("androidx.navigation:navigation-ui-ktx:$androidxNavigation")
-    implementation("androidx.paging:paging-compose:3.3.1")
+    implementation("androidx.paging:paging-compose:3.3.2")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
