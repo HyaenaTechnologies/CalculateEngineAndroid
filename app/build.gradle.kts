@@ -30,7 +30,7 @@ android {
     compileSdk = 34
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
+        kotlinCompilerExtensionVersion = "$androidxComposeCompiler"
     }
 
     defaultConfig {
@@ -57,10 +57,11 @@ android {
         }
     }
 
-    ndkVersion = "27.0.11718014"
+    ndkVersion = "27.0.12077973"
 }
 
 val androidxCompose: String = "1.6.8"
+val androidxComposeCompiler: String = "1.5.15"
 val androidxLifecycle: String = "2.8.4"
 val androidxNavigation: String = "2.7.7"
 val androidxTest: String = "1.6.1"
@@ -75,7 +76,7 @@ dependencies {
     // Android
     implementation("androidx.activity:activity-compose:1.9.1")
     implementation("androidx.compose.animation:animation:$androidxCompose")
-    implementation("androidx.compose.compiler:compiler:1.5.14")
+    implementation("androidx.compose.compiler:compiler:$androidxComposeCompiler")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
     implementation("androidx.compose.material:material:$androidxCompose")
     implementation("androidx.compose.material3:material3:1.2.1")
@@ -91,7 +92,7 @@ dependencies {
     implementation("androidx.navigation:navigation-common-ktx:$androidxNavigation")
     implementation("androidx.navigation:navigation-compose:$androidxNavigation")
     implementation("androidx.navigation:navigation-ui-ktx:$androidxNavigation")
-    implementation("androidx.paging:paging-compose:3.3.1")
+    implementation("androidx.paging:paging-compose:3.3.2")
     implementation("com.google.android.material:compose-theme-adapter:1.2.1")
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
