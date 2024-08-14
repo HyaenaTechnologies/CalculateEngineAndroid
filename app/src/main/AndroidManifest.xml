@@ -9,15 +9,12 @@
         android:label="Calculate Engine"
         android:roundIcon="@mipmap/hce_res_round"
         android:supportsRtl="true"
-        android:theme="@style/LaunchTheme"
         tools:targetApi="34">
         <activity
             android:name="dev.calculate_engine.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:hardwareAccelerated="true"
-            android:theme="@style/NormalTheme"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
