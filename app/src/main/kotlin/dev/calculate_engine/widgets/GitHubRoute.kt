@@ -24,7 +24,7 @@ fun GitHubRoute() {
             }
         },
         topBar = {
-            StatelessTopAppBar(topBarScroll)
+            HomeTopAppBar(topBarScroll)
         },
     )
 }

@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.bodyFontFamily
 
-// Stateless Navigation Bar Widget
+// Home Route Navigation Bar Widget: Stateless
 @Composable
-fun StatelessNavigationBar() {
+fun HomeNavigationBar() {
     NavigationBar {
         NavigationBarItem(
             alwaysShowLabel = false,

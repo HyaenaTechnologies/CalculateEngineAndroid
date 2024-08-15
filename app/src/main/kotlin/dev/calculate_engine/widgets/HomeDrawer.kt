@@ -18,16 +18,16 @@ import dev.calculate_engine.theme.bodyFontFamily
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-// Stateless Drawer Widget
+// Home Route Drawer Widget: Stateless
 @Composable
-fun StatelessDrawer(
-    statelessDrawerScope: CoroutineScope,
-    statelessDrawerState: DrawerState,
-    statelessDrawerScrollState: ScrollState
+fun HomeDrawer(
+    homeDrawerScope: CoroutineScope,
+    homeDrawerScrollState: ScrollState,
+    homeDrawerState: DrawerState
 ) {
-    BackHandler(enabled = statelessDrawerState.isOpen) {
-        statelessDrawerScope.launch {
-            statelessDrawerState.close()
+    BackHandler(enabled = homeDrawerState.isOpen) {
+        homeDrawerScope.launch {
+            homeDrawerState.close()
         }
     }
     DismissibleNavigationDrawer(
@@ -42,7 +42,7 @@ fun StatelessDrawer(
         drawerContent = {
             DismissibleDrawerSheet {
                 Column(
-                    Modifier.verticalScroll(statelessDrawerScrollState)
+                    Modifier.verticalScroll(homeDrawerScrollState)
                 ) {
                     NavigationDrawerItem(
                         icon = {
@@ -63,7 +63,7 @@ fun StatelessDrawer(
                 }
             }
         },
-        drawerState = statelessDrawerState,
+        drawerState = homeDrawerState,
         gesturesEnabled = true,
     )
 }

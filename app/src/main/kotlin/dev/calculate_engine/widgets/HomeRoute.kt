@@ -4,7 +4,7 @@ import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.material.Scaffold
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -25,9 +25,10 @@ fun HomeRoute() {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     val widgetScope: CoroutineScope = rememberCoroutineScope()
     val widgetScrollState: ScrollState = rememberScrollState()
+    HomeDrawer(widgetScope, widgetScrollState, drawerState)
     Scaffold(
         bottomBar = {
-            StatelessNavigationBar()
+            HomeNavigationBar()
         },
         content = { innerPadding ->
             LazyColumn(
@@ -37,12 +38,8 @@ fun HomeRoute() {
 
             }
         },
-        drawerContent = {
-            StatelessDrawer(widgetScope, drawerState, widgetScrollState)
-        },
-        drawerElevation = 6.dp,
         topBar = {
-            StatelessTopAppBar(topBarScroll)
+            HomeTopAppBar(topBarScroll)
         },
     )
 }

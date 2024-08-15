@@ -24,7 +24,7 @@ fun ConversionCalculatorRoute() {
             }
         },
         topBar = {
-            StatelessTopAppBar(topBarScroll)
+            HomeTopAppBar(topBarScroll)
         },
     )
 }

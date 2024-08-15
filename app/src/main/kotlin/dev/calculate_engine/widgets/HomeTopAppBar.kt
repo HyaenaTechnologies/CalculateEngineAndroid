@@ -12,10 +12,10 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import dev.calculate_engine.theme.displayFontFamily
 
-// Stateless Top App Bar Widget
+// Home Route App Bar Widget: Stateless
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun StatelessTopAppBar(
+fun HomeTopAppBar(
     appBarScroll: TopAppBarScrollBehavior
 ) {
     TopAppBar(
