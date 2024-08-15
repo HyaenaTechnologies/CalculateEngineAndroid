@@ -5,23 +5,26 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
+        android:appCategory="productivity"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/hce_res"
         android:label="Calculate Engine"
         android:roundIcon="@mipmap/hce_res_round"
         android:supportsRtl="true"
         tools:targetApi="34">
         <activity
-            android:name="dev.calculate_engine.MainActivity"
+            android:canDisplayOnRemoteDevices="true"
+            android:colorMode="hdr"
+            android:directBootAware="true"
             android:exported="true"
             android:launchMode="singleTop"
-            android:hardwareAccelerated="true"
+            android:name="dev.calculate_engine.MainActivity"
+            android:resizeableActivity="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
