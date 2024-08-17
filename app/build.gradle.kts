@@ -136,7 +136,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test:$androidxCompose")
     androidTestImplementation("androidx.navigation:navigation-testing:$androidxNavigation")
     androidTestImplementation("androidx.test:core-ktx:$androidxTest")
-    androidTestImplementation("androidx.test:monitor:1.7.1")
+    androidTestImplementation("androidx.test:monitor:1.7.2")
     androidTestImplementation("androidx.test:orchestrator:$androidxTestServices")
     androidTestImplementation("androidx.test:rules:$androidxTest")
     androidTestImplementation("androidx.test:runner:$androidxTest")
