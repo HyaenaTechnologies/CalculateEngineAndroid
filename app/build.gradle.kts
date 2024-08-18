@@ -64,12 +64,12 @@ val androidxCompose: String = "1.6.8"
 val androidxComposeCompiler: String = "1.5.15"
 val androidxLifecycle: String = "2.8.4"
 val androidxNavigation: String = "2.7.7"
-val androidxTest: String = "1.6.1"
+val androidxTest: String = "1.6.2"
 val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.10"
-val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC"
-val orgJetBrainsKotlinXIO: String = "0.5.1"
+val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
+val orgJetBrainsKotlinXIO: String = "0.5.2"
 val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
@@ -136,7 +136,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test:$androidxCompose")
     androidTestImplementation("androidx.navigation:navigation-testing:$androidxNavigation")
     androidTestImplementation("androidx.test:core-ktx:$androidxTest")
-    androidTestImplementation("androidx.test:monitor:1.7.1")
+    androidTestImplementation("androidx.test:monitor:1.7.2")
     androidTestImplementation("androidx.test:orchestrator:$androidxTestServices")
     androidTestImplementation("androidx.test:rules:$androidxTest")
     androidTestImplementation("androidx.test:runner:$androidxTest")

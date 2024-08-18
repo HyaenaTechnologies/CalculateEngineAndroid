@@ -24,7 +24,7 @@ fun ConversionCalculatorRoute() {
             }
         },
         topBar = {
-            HomeTopAppBar(topBarScroll)
+
         },
     )
 }

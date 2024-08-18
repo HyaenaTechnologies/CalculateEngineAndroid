@@ -24,7 +24,7 @@ fun OpenStaxRoute() {
             }
         },
         topBar = {
-            HomeTopAppBar(topBarScroll)
+
         },
     )
 }
