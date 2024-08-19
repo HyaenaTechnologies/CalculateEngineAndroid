@@ -12,7 +12,7 @@ import dev.calculate_engine.theme.bodyFontFamily
 fun HomeNavigationBar() {
     NavigationBar {
         NavigationBarItem(
-            alwaysShowLabel = false,
+            alwaysShowLabel = true,
             enabled = true,
             icon = {
                 R.raw.calculator
@@ -29,7 +29,7 @@ fun HomeNavigationBar() {
             selected = false,
         )
         NavigationBarItem(
-            alwaysShowLabel = false,
+            alwaysShowLabel = true,
             enabled = true,
             icon = {
                 R.raw.book

@@ -21,7 +21,7 @@
 <a href="https://github.com/HyaenaTechnologies/calculate_engine_android">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine_android/blob/main/lib/src/main/res/raw/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/calculate_engine_android/blob/main/app/src/main/res/raw/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>
