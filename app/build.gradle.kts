@@ -5,6 +5,18 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+val androidxCompose: String = "1.6.8"
+val androidxComposeCompiler: String = "1.5.15"
+val androidxLifecycle: String = "2.8.4"
+val androidxNavigation: String = "2.7.7"
+val androidxTest: String = "1.6.1"
+val androidxTestServices: String = "1.5.0"
+val ioKtor: String = "2.3.12"
+val jetBrainsKotlin: String = "2.0.10"
+val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
+val orgJetBrainsKotlinXIO: String = "0.5.2"
+val orgJetBrainsKotlinXSerialization: String = "1.7.1"
+
 android {
     buildFeatures {
         buildConfig = true
@@ -59,18 +71,6 @@ android {
 
     ndkVersion = "27.0.12077973"
 }
-
-val androidxCompose: String = "1.6.8"
-val androidxComposeCompiler: String = "1.5.15"
-val androidxLifecycle: String = "2.8.4"
-val androidxNavigation: String = "2.7.7"
-val androidxTest: String = "1.6.1"
-val androidxTestServices: String = "1.5.0"
-val ioKtor: String = "2.3.12"
-val jetBrainsKotlin: String = "2.0.10"
-val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
-val orgJetBrainsKotlinXIO: String = "0.5.2"
-val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 dependencies {
     // Android
