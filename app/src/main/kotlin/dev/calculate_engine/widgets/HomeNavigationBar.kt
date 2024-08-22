@@ -1,9 +1,11 @@
 package dev.calculate_engine.widgets
 
+import androidx.compose.foundation.Image
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.painterResource
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.bodyFontFamily
 
@@ -15,7 +17,10 @@ fun HomeNavigationBar() {
             alwaysShowLabel = true,
             enabled = true,
             icon = {
-                R.raw.calculator
+                Image(
+                    contentDescription = "Basic Calculator",
+                    painter = painterResource(id = R.drawable.calculator)
+                )
             },
             label = {
                 Text(
@@ -32,7 +37,10 @@ fun HomeNavigationBar() {
             alwaysShowLabel = true,
             enabled = true,
             icon = {
-                R.raw.book
+                Image(
+                    contentDescription = "Basic Calculator",
+                    painter = painterResource(id = R.drawable.book)
+                )
             },
             label = {
                 Text(
