@@ -9,10 +9,10 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
-// OpenStax Route: Stateful
+// In Development Route: Stateful
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun OpenStaxRoute() {
+fun InDevelopment() {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         content = { innerPadding ->

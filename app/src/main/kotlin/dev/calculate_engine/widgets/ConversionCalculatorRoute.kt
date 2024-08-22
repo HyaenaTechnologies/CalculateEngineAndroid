@@ -1,7 +1,7 @@
 package dev.calculate_engine.widgets
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.consumeWindowInsets
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBarDefaults
@@ -16,8 +16,7 @@ fun ConversionCalculatorRoute() {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         content = { innerPadding ->
-            LazyColumn(
-                contentPadding = innerPadding,
+            Column(
                 modifier = Modifier.consumeWindowInsets(innerPadding)
             ) {
 

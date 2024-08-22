@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import dev.calculate_engine.widgets.ConversionCalculatorRoute
 import dev.calculate_engine.widgets.GitHubRoute
 import dev.calculate_engine.widgets.HomeRoute
+import dev.calculate_engine.widgets.InDevelopment
 import dev.calculate_engine.widgets.OpenStaxRoute
 
 // Navigation Model: Stateless
@@ -19,16 +20,20 @@ fun NavigationModel(
         navController = navigationController,
         startDestination = initialDestination
     ) {
-        composable(route = "Basic Calculator") {
+        composable(route = "Conversion Calculator") {
             ConversionCalculatorRoute()
+        }
+
+        composable(route = "GitHub") {
+            GitHubRoute()
         }
 
         composable(route = "Home") {
             HomeRoute()
         }
 
-        composable(route = "GitHub") {
-            GitHubRoute()
+        composable(route = "In Development") {
+            InDevelopment()
         }
 
         composable(route = "OpenStax") {
