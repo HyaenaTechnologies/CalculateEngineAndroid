@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.navigation.NavHostController
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.displayFontFamily
 import kotlinx.coroutines.CoroutineScope
@@ -29,7 +30,9 @@ import kotlinx.coroutines.launch
 // Home Route Widget: Stateful
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun HomeRoute() {
+fun HomeRoute(
+    navigationHost: NavHostController
+) {
     val coroutineScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
     val scrollState: ScrollState = rememberScrollState()
@@ -96,7 +99,10 @@ fun HomeRoute() {
             )
         },
         drawerContent = {
-            MenuSheet(scrollState)
+            MenuSheet(
+                hostController = navigationHost,
+                menuScrollState = scrollState
+            )
         },
         drawerState = drawerState,
         gesturesEnabled = true,

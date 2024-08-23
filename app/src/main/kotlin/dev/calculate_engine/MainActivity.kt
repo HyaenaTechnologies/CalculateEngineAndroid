@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import dev.calculate_engine.model.NavigationModel
 import dev.calculate_engine.theme.CalculateEngineTheme
 import dev.calculate_engine.widgets.HomeRoute
 
@@ -21,6 +22,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background,
                 ) {
                     HomeRoute()
+                    NavigationModel()
                 }
             }
         }

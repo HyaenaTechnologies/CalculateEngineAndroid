@@ -4,40 +4,40 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import dev.calculate_engine.widgets.ConversionCalculatorRoute
-import dev.calculate_engine.widgets.GitHubRoute
+import androidx.navigation.compose.rememberNavController
+import dev.calculate_engine.widgets.ConversionCalculator
+import dev.calculate_engine.widgets.GitHubSource
 import dev.calculate_engine.widgets.HomeRoute
 import dev.calculate_engine.widgets.InDevelopment
-import dev.calculate_engine.widgets.OpenStaxRoute
+import dev.calculate_engine.widgets.OpenStax
 
-// Navigation Model: Stateless
+// Navigation Model: Stateful
 @Composable
 fun NavigationModel(
-    initialDestination: String,
-    navigationController: NavHostController
 ) {
+    val navigationController: NavHostController = rememberNavController()
     NavHost(
         navController = navigationController,
-        startDestination = initialDestination
+        startDestination = "Home"
     ) {
         composable(route = "Conversion Calculator") {
-            ConversionCalculatorRoute()
+            ConversionCalculator(navigationHost = navigationController)
         }
 
         composable(route = "GitHub") {
-            GitHubRoute()
+            GitHubSource(navigationHost = navigationController)
         }
 
         composable(route = "Home") {
-            HomeRoute()
+            HomeRoute(navigationHost = navigationController)
         }
 
         composable(route = "In Development") {
-            InDevelopment()
+            InDevelopment(navigationHost = navigationController)
         }
 
         composable(route = "OpenStax") {
-            OpenStaxRoute()
+            OpenStax(navigationHost = navigationController)
         }
     }
 }

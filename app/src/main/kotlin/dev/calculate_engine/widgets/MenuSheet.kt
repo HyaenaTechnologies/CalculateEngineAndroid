@@ -11,12 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.navigation.NavHostController
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.bodyFontFamily
 
 // Home Route Drawer Sheet: Stateless
 @Composable
 fun MenuSheet(
+    hostController: NavHostController,
     menuScrollState: ScrollState
 ) {
     ModalDrawerSheet {
@@ -96,7 +98,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "GitHub")
+                },
                 selected = false,
             )
             NavigationDrawerItem(

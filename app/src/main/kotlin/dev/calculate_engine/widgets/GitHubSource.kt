@@ -15,11 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 
-// GitHub Route: Stateful
+// GitHub Source Route: Stateful
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun GitHubRoute() {
+fun GitHubSource(
+    navigationHost: NavHostController
+) {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         content = { innerPadding ->
@@ -45,7 +48,11 @@ fun GitHubRoute() {
             }
         },
         topBar = {
-
+            NavigationTopBar(
+                appBarScroll = topBarScroll,
+                hostController = navigationHost,
+                titleText = "GitHub Source"
+            )
         },
     )
 }

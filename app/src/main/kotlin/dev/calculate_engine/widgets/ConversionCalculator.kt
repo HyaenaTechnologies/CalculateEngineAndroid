@@ -8,11 +8,14 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
 
-// OpenStax Route: Stateful
+// Conversion Calculator Route: Stateful
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun OpenStaxRoute() {
+fun ConversionCalculator(
+    navigationHost: NavHostController
+) {
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         content = { innerPadding ->
@@ -23,7 +26,11 @@ fun OpenStaxRoute() {
             }
         },
         topBar = {
-
+            NavigationTopBar(
+                appBarScroll = topBarScroll,
+                hostController = navigationHost,
+                titleText = "Conversion"
+            )
         },
     )
 }
