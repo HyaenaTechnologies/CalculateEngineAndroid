@@ -125,7 +125,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-io-bytestring:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinXSerialization")
