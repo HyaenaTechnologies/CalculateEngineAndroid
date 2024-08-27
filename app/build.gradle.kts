@@ -12,7 +12,7 @@ val androidxNavigation: String = "2.7.7"
 val androidxTest: String = "1.6.1"
 val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "3.0.0-beta-2"
-val jetBrainsKotlin: String = "2.0.10"
+val jetBrainsKotlin: String = "2.0.20"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
 val orgJetBrainsKotlinXIO: String = "0.5.3"
 val orgJetBrainsKotlinXSerialization: String = "1.7.1"
@@ -139,7 +139,7 @@ dependencies {
     testImplementation("io.ktor:ktor-serialization-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-kotlinx-tests:$ioKtor")
     testImplementation("io.ktor:ktor-test-dispatcher:$ioKtor")
-    testImplementation("org.jetbrains.kotlin:kotlin-test:$jetBrainsKotlin")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:2.0.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinXCoroutines")
     testImplementation("org.jetbrains.kotlinx:lincheck:2.33")
 }
