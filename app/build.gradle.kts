@@ -11,7 +11,7 @@ val androidxLifecycle: String = "2.8.4"
 val androidxNavigation: String = "2.7.7"
 val androidxTest: String = "1.6.1"
 val androidxTestServices: String = "1.5.0"
-val ioKtor: String = "3.0.0-beta-2"
+val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.20"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
 val orgJetBrainsKotlinXIO: String = "0.5.3"
@@ -98,16 +98,6 @@ dependencies {
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
     // KTOR
     implementation("io.ktor:ktor-call-id:$ioKtor")
-    implementation("io.ktor:ktor-client-auth:$ioKtor")
-    implementation("io.ktor:ktor-client-call-id:$ioKtor")
-    implementation("io.ktor:ktor-client-core:$ioKtor")
-    implementation("io.ktor:ktor-client-cio:$ioKtor")
-    implementation("io.ktor:ktor-client-content-negotiation:$ioKtor")
-    implementation("io.ktor:ktor-client-encoding:$ioKtor")
-    implementation("io.ktor:ktor-client-json:$ioKtor")
-    implementation("io.ktor:ktor-client-logging:$ioKtor")
-    implementation("io.ktor:ktor-client-resources:$ioKtor")
-    implementation("io.ktor:ktor-client-serialization:$ioKtor")
     implementation("io.ktor:ktor-events:$ioKtor")
     implementation("io.ktor:ktor-http:$ioKtor")
     implementation("io.ktor:ktor-http-cio:$ioKtor")
@@ -146,8 +136,6 @@ dependencies {
     androidTestImplementation("androidx.test.services:storage:$androidxTestServices")
     androidTestImplementation("androidx.test.services:test-services:$androidxTestServices")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
-    testImplementation("io.ktor:ktor-client-tests:$ioKtor")
-    testImplementation("io.ktor:ktor-client-content-negotiation-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-kotlinx-tests:$ioKtor")
     testImplementation("io.ktor:ktor-test-dispatcher:$ioKtor")
