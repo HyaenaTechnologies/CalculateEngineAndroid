@@ -11,10 +11,10 @@ val androidxLifecycle: String = "2.8.4"
 val androidxNavigation: String = "2.7.7"
 val androidxTest: String = "1.6.1"
 val androidxTestServices: String = "1.5.0"
-val ioKtor: String = "2.3.12"
-val jetBrainsKotlin: String = "2.0.10"
+val ioKtor: String = "3.0.0-beta-2"
+val jetBrainsKotlin: String = "2.0.20"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
-val orgJetBrainsKotlinXIO: String = "0.5.2"
+val orgJetBrainsKotlinXIO: String = "0.5.3"
 val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 android {
@@ -97,15 +97,7 @@ dependencies {
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
     // KTOR
-    implementation("io.ktor:ktor-client-auth:$ioKtor")
-    implementation("io.ktor:ktor-client-core:$ioKtor")
-    implementation("io.ktor:ktor-client-cio:$ioKtor")
-    implementation("io.ktor:ktor-client-content-negotiation:$ioKtor")
-    implementation("io.ktor:ktor-client-encoding:$ioKtor")
-    implementation("io.ktor:ktor-client-json:$ioKtor")
-    implementation("io.ktor:ktor-client-logging:$ioKtor")
-    implementation("io.ktor:ktor-client-resources:$ioKtor")
-    implementation("io.ktor:ktor-client-serialization:$ioKtor")
+    implementation("io.ktor:ktor-call-id:$ioKtor")
     implementation("io.ktor:ktor-events:$ioKtor")
     implementation("io.ktor:ktor-http:$ioKtor")
     implementation("io.ktor:ktor-http-cio:$ioKtor")
@@ -117,6 +109,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization:$ioKtor")
     implementation("io.ktor:ktor-serialization-kotlinx:$ioKtor")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ioKtor")
+    implementation("io.ktor:ktor-sse:$ioKtor")
     implementation("io.ktor:ktor-utils:$ioKtor")
     implementation("io.ktor:ktor-websockets:$ioKtor")
     implementation("io.ktor:ktor-websocket-serialization:$ioKtor")
@@ -125,7 +118,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-io-bytestring:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinXSerialization")
@@ -143,10 +136,9 @@ dependencies {
     androidTestImplementation("androidx.test.services:storage:$androidxTestServices")
     androidTestImplementation("androidx.test.services:test-services:$androidxTestServices")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
-    testImplementation("io.ktor:ktor-client-tests:$ioKtor")
-    testImplementation("io.ktor:ktor-client-content-negotiation-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-tests:$ioKtor")
     testImplementation("io.ktor:ktor-serialization-kotlinx-tests:$ioKtor")
+    testImplementation("io.ktor:ktor-test-dispatcher:$ioKtor")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$jetBrainsKotlin")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinXCoroutines")
     testImplementation("org.jetbrains.kotlinx:lincheck:2.33")
