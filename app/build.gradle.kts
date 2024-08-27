@@ -14,7 +14,6 @@ val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "2.3.12"
 val jetBrainsKotlin: String = "2.0.20"
 val orgJetBrainsKotlinXCoroutines: String = "1.9.0-RC.2"
-val orgJetBrainsKotlinXIO: String = "0.5.3"
 val orgJetBrainsKotlinXSerialization: String = "1.7.1"
 
 android {
@@ -112,13 +111,11 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-io-bytestring:$orgJetBrainsKotlinXIO")
-    implementation("org.jetbrains.kotlinx:kotlinx-io-core:$orgJetBrainsKotlinXIO")
+    implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-properties:$orgJetBrainsKotlinXSerialization")
-    implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0")
     // Tests
     androidTestImplementation("androidx.compose.ui:ui-test:$androidxCompose")
     androidTestImplementation("androidx.navigation:navigation-testing:$androidxNavigation")
