@@ -97,7 +97,6 @@ dependencies {
     implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
     implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
     // KTOR
-    implementation("io.ktor:ktor-call-id:$ioKtor")
     implementation("io.ktor:ktor-events:$ioKtor")
     implementation("io.ktor:ktor-http:$ioKtor")
     implementation("io.ktor:ktor-http-cio:$ioKtor")
@@ -109,7 +108,6 @@ dependencies {
     implementation("io.ktor:ktor-serialization:$ioKtor")
     implementation("io.ktor:ktor-serialization-kotlinx:$ioKtor")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ioKtor")
-    implementation("io.ktor:ktor-sse:$ioKtor")
     implementation("io.ktor:ktor-utils:$ioKtor")
     implementation("io.ktor:ktor-websockets:$ioKtor")
     implementation("io.ktor:ktor-websocket-serialization:$ioKtor")
