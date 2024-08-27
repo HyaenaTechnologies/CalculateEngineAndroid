@@ -93,9 +93,6 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$androidxNavigation")
     implementation("androidx.navigation:navigation-ui-ktx:$androidxNavigation")
     implementation("androidx.paging:paging-compose:3.3.2")
-    implementation("com.google.android.material:compose-theme-adapter:1.2.1")
-    implementation("com.google.android.material:compose-theme-adapter-3:1.1.1")
-    implementation("com.google.android.material:compose-theme-adapter-core:1.0.1")
     // KTOR
     implementation("io.ktor:ktor-events:$ioKtor")
     implementation("io.ktor:ktor-http:$ioKtor")
@@ -114,13 +111,13 @@ dependencies {
     // JetBrains
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$jetBrainsKotlin")
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-io-bytestring:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:$orgJetBrainsKotlinXIO")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$orgJetBrainsKotlinXSerialization")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-properties:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0")
     // Tests
