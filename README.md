@@ -48,4 +48,6 @@ Steps and promote [OpenStax][Stax], [Rice University][Rice].
 git clone
 
 gradle build
+
+adb -s device-serial-number install ./app/build/outputs/apk/debug/app-debug.apk
 ```
