@@ -36,9 +36,9 @@ import kotlinx.coroutines.launch
 fun HomeRoute() {
     val coroutineScope: CoroutineScope = rememberCoroutineScope()
     val drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
-    val navigationController: NavHostController = rememberNavController()
     val scrollState: ScrollState = rememberScrollState()
     val topBarScroll: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val navigationController: NavHostController = rememberNavController()
     BackHandler(enabled = drawerState.isOpen) {
         coroutineScope.launch {
             drawerState.close()
@@ -109,28 +109,4 @@ fun HomeRoute() {
         drawerState = drawerState,
         gesturesEnabled = true,
     )
-    NavHost(
-        navController = navigationController,
-        startDestination = "Home"
-    ) {
-        composable(route = "Conversion Calculator") {
-            ConversionCalculator(navigationHost = navigationController)
-        }
-
-        composable(route = "GitHub") {
-            GitHubSource(navigationHost = navigationController)
-        }
-
-        composable(route = "Home") {
-            HomeRoute()
-        }
-
-        composable(route = "In Development") {
-            InDevelopment(navigationHost = navigationController)
-        }
-
-        composable(route = "OpenStax") {
-            OpenStax(navigationHost = navigationController)
-        }
-    }
 }
