@@ -28,7 +28,7 @@ fun NavigationModel() {
         }
 
         composable(route = "Home") {
-            HomeRoute()
+            HomeRoute(navigationHost = navigationController)
         }
 
         composable(route = "In Development") {
