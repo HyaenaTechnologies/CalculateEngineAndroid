@@ -41,7 +41,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
             NavigationDrawerItem(
@@ -60,7 +62,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
             NavigationDrawerItem(
@@ -79,7 +83,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
             NavigationDrawerItem(
@@ -119,7 +125,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
             NavigationDrawerItem(
@@ -138,7 +146,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
             NavigationDrawerItem(
@@ -157,7 +167,9 @@ fun MenuSheet(
                     )
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = {},
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
                 selected = false,
             )
         }
