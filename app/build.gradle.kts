@@ -108,7 +108,7 @@ dependencies {
     implementation("io.ktor:ktor-websocket-serialization:$ioKtor")
     // JetBrains
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$jetBrainsKotlin")
-    implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
+    implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.3")
