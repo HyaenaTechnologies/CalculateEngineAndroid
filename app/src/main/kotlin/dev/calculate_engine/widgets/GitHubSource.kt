@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import dev.calculate_engine.theme.titleFontFamily
 
 // GitHub Source Route: Stateful
 @Composable
@@ -31,17 +32,22 @@ fun GitHubSource(
             ) {
                 Card(
                     onClick = {},
-                    modifier = Modifier.size(
-                        width = 180.dp,
-                        height = 100.dp
-                    )
+                    modifier = Modifier
+                        .align(Alignment.CenterHorizontally)
+                        .size(
+                            height = 600.dp,
+                            width = 600.dp
+                        )
                 ) {
                     Box(
                         Modifier.fillMaxSize()
                     ) {
                         Text(
-                            "Clickable",
-                            Modifier.align(Alignment.Center)
+                            "Place Holder",
+                            fontFamily = titleFontFamily,
+                            maxLines = 1,
+                            modifier = Modifier.align(Alignment.Center),
+                            softWrap = true
                         )
                     }
                 }

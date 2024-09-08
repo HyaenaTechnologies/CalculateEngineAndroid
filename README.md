@@ -49,5 +49,19 @@ git clone
 
 gradle build
 
+adb devices -l
+
 adb -s device-serial-number install ./app/build/outputs/apk/debug/app-debug.apk
+
+adb shell am
+
+adb shell cmd
+
+adb shell dpm
+
+adb shell pm
+
+adb shell screencap /path/filename.png
+
+adb shell screenrecord /path/filename.mp4
 ```

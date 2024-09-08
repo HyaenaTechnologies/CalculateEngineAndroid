@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
 import dev.calculate_engine.R
-import dev.calculate_engine.theme.displayFontFamily
+import dev.calculate_engine.theme.titleFontFamily
 
 // Top App Bar Navigation Widget: Stateless
 @Composable
@@ -37,7 +37,7 @@ fun NavigationTopBar(
         title = {
             Text(
                 titleText,
-                fontFamily = displayFontFamily,
+                fontFamily = titleFontFamily,
                 maxLines = 1,
                 softWrap = true,
             )

@@ -23,7 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
 import dev.calculate_engine.R
-import dev.calculate_engine.theme.displayFontFamily
+import dev.calculate_engine.theme.titleFontFamily
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -46,7 +46,7 @@ fun HomeRoute(
         content = {
             Scaffold(
                 bottomBar = {
-                    HomeNavigationBar()
+                    HomeNavigationBar(hostController = navigationHost)
                 },
                 content = { innerPadding ->
                     Column(
@@ -58,13 +58,21 @@ fun HomeRoute(
                 topBar = {
                     TopAppBar(
                         actions = {
-                            IconButton(onClick = {}) {
+                            IconButton(
+                                onClick = {
+                                    navigationHost.navigate(route = "In Development")
+                                }
+                            ) {
                                 Image(
                                     contentDescription = "Settings",
                                     painter = painterResource(id = R.drawable.settings)
                                 )
                             }
-                            IconButton(onClick = {}) {
+                            IconButton(
+                                onClick = {
+                                    navigationHost.navigate(route = "In Development")
+                                }
+                            ) {
                                 Image(
                                     contentDescription = "Application Information",
                                     painter = painterResource(id = R.drawable.information)
@@ -89,7 +97,7 @@ fun HomeRoute(
                         title = {
                             Text(
                                 "Home",
-                                fontFamily = displayFontFamily,
+                                fontFamily = titleFontFamily,
                                 maxLines = 1,
                                 softWrap = true,
                             )

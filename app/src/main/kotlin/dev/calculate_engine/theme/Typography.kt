@@ -21,8 +21,8 @@ val bodyFontFamily: FontFamily = FontFamily(
     )
 )
 
-// Display Font Family
-val displayFontFamily: FontFamily = FontFamily(
+// Title Font Family
+val titleFontFamily: FontFamily = FontFamily(
     Font(
         fontProvider = provider,
         googleFont = GoogleFont("JetBrains Mono"),
@@ -34,15 +34,15 @@ val baseline: Typography = Typography()
 
 // Calculate Engine Typography
 val calculateEngineTypography: Typography = Typography(
-    displayLarge = baseline.displayLarge.copy(fontFamily = displayFontFamily),
-    displayMedium = baseline.displayMedium.copy(fontFamily = displayFontFamily),
-    displaySmall = baseline.displaySmall.copy(fontFamily = displayFontFamily),
-    headlineLarge = baseline.headlineLarge.copy(fontFamily = displayFontFamily),
-    headlineMedium = baseline.headlineMedium.copy(fontFamily = displayFontFamily),
-    headlineSmall = baseline.headlineSmall.copy(fontFamily = displayFontFamily),
-    titleLarge = baseline.titleLarge.copy(fontFamily = displayFontFamily),
-    titleMedium = baseline.titleMedium.copy(fontFamily = displayFontFamily),
-    titleSmall = baseline.titleSmall.copy(fontFamily = displayFontFamily),
+    displayLarge = baseline.displayLarge.copy(fontFamily = titleFontFamily),
+    displayMedium = baseline.displayMedium.copy(fontFamily = titleFontFamily),
+    displaySmall = baseline.displaySmall.copy(fontFamily = titleFontFamily),
+    headlineLarge = baseline.headlineLarge.copy(fontFamily = titleFontFamily),
+    headlineMedium = baseline.headlineMedium.copy(fontFamily = titleFontFamily),
+    headlineSmall = baseline.headlineSmall.copy(fontFamily = titleFontFamily),
+    titleLarge = baseline.titleLarge.copy(fontFamily = titleFontFamily),
+    titleMedium = baseline.titleMedium.copy(fontFamily = titleFontFamily),
+    titleSmall = baseline.titleSmall.copy(fontFamily = titleFontFamily),
     bodyLarge = baseline.bodyLarge.copy(fontFamily = bodyFontFamily),
     bodyMedium = baseline.bodyMedium.copy(fontFamily = bodyFontFamily),
     bodySmall = baseline.bodySmall.copy(fontFamily = bodyFontFamily),
