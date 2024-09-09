@@ -24,13 +24,6 @@ fun OpenStax(
             ) {
 
             }
-        },
-        topBar = {
-            NavigationTopBar(
-                appBarScroll = topBarScroll,
-                hostController = navigationHost,
-                titleText = "OpenStax"
-            )
-        },
+        }
     )
 }

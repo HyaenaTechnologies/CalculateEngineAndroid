@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.navigation.NavHostController
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.bodyFontFamily
@@ -37,6 +38,7 @@ fun MenuSheet(
                         "Algebra",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -58,6 +60,7 @@ fun MenuSheet(
                         "Calculus",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -79,6 +82,29 @@ fun MenuSheet(
                         "Chemistry",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        softWrap = true,
+                    )
+                },
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+                onClick = {
+                    hostController.navigate(route = "In Development")
+                },
+                selected = false,
+            )
+            NavigationDrawerItem(
+                icon = {
+                    Image(
+                        contentDescription = "Conversion",
+                        painter = painterResource(id = R.drawable.filter)
+                    )
+                },
+                label = {
+                    Text(
+                        "Conversion",
+                        fontFamily = bodyFontFamily,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -100,6 +126,7 @@ fun MenuSheet(
                         "GitHub Source",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -121,6 +148,7 @@ fun MenuSheet(
                         "Physics",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -142,6 +170,7 @@ fun MenuSheet(
                         "Statistics",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },
@@ -163,6 +192,7 @@ fun MenuSheet(
                         "Trigonometry",
                         fontFamily = bodyFontFamily,
                         maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                         softWrap = true,
                     )
                 },

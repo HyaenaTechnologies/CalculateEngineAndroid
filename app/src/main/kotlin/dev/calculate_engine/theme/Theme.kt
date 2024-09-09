@@ -252,10 +252,12 @@ private val highContrastDarkTheme: ColorScheme = darkColorScheme(
 
 @Composable
 fun CalculateEngineTheme(
-    systemDarkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
+    val dynamicColor = true
+    val systemDarkTheme: Boolean = isSystemInDarkTheme()
+    val view = LocalView.current
+
     val colorScheme: ColorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
@@ -267,7 +269,7 @@ fun CalculateEngineTheme(
         isSystemInDarkTheme() -> darkTheme
         else -> lightTheme
     }
-    val view = LocalView.current
+
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window

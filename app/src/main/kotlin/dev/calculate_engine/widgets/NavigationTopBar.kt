@@ -8,6 +8,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.navigation.NavHostController
 import dev.calculate_engine.R
 import dev.calculate_engine.theme.titleFontFamily
@@ -39,6 +40,7 @@ fun NavigationTopBar(
                 titleText,
                 fontFamily = titleFontFamily,
                 maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
                 softWrap = true,
             )
         },
