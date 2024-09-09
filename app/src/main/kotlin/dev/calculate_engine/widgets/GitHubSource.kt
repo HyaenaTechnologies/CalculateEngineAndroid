@@ -39,10 +39,10 @@ import dev.calculate_engine.theme.titleFontFamily
 fun GitHubSource(
     navigationHost: NavHostController
 ) {
-    var expandedState by rememberSaveable {
+    var expandedState: Boolean by rememberSaveable {
         mutableStateOf(false)
     }
-    val rotationState by animateFloatAsState(
+    val rotationState: Float by animateFloatAsState(
         targetValue = if (expandedState == true) {
             180f
         } else {
@@ -53,7 +53,9 @@ fun GitHubSource(
     Scaffold(
         content = { innerPadding ->
             Column(
-                modifier = Modifier.consumeWindowInsets(innerPadding)
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.consumeWindowInsets(innerPadding),
+                verticalArrangement = Arrangement.SpaceEvenly
             ) {
                 Card(
                     onClick = {},
@@ -68,8 +70,13 @@ fun GitHubSource(
                     shape = RoundedCornerShape(size = 6.dp)
                 ) {
                     Column(
-                        modifier = Modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.SpaceEvenly
                     ) {
+                        Image(
+                            contentDescription = "Down Arrow",
+                            painter = painterResource(id = R.drawable.hce_markdown)
+                        )
                         Row(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
@@ -96,13 +103,18 @@ fun GitHubSource(
                             }
                         }
                         if (expandedState == true) {
-                            Column{
-
+                            Text(
+                                    "Place Holder",
+                                    fontFamily = titleFontFamily,
+                                    maxLines = 1,
+                                    modifier = Modifier.weight(5f),
+                                    overflow = TextOverflow.Ellipsis,
+                                    softWrap = true
+                                )
                             }
                         }
                     }
                 }
-            }
         },
         topBar = {
             NavigationTopBar(

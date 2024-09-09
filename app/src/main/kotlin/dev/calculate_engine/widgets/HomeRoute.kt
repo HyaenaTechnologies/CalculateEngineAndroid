@@ -3,6 +3,7 @@ package dev.calculate_engine.widgets
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.ScrollState
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.rememberScrollState
@@ -19,6 +20,7 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
@@ -51,7 +53,9 @@ fun HomeRoute(
                 },
                 content = { innerPadding ->
                     Column(
-                        modifier = Modifier.consumeWindowInsets(innerPadding)
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier.consumeWindowInsets(innerPadding),
+                        verticalArrangement = Arrangement.SpaceEvenly
                     ) {
 
                     }
