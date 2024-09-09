@@ -104,17 +104,17 @@ fun GitHubSource(
                         }
                         if (expandedState == true) {
                             Text(
-                                    "Place Holder",
-                                    fontFamily = titleFontFamily,
-                                    maxLines = 1,
-                                    modifier = Modifier.weight(5f),
-                                    overflow = TextOverflow.Ellipsis,
-                                    softWrap = true
-                                )
-                            }
+                                "Place Holder",
+                                fontFamily = titleFontFamily,
+                                maxLines = 1,
+                                modifier = Modifier.weight(5f),
+                                overflow = TextOverflow.Ellipsis,
+                                softWrap = true
+                            )
                         }
                     }
                 }
+            }
         },
         topBar = {
             NavigationTopBar(
