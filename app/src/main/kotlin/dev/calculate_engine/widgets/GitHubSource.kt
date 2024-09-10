@@ -75,7 +75,7 @@ fun GitHubSource(
                     ) {
                         Image(
                             contentDescription = "Down Arrow",
-                            painter = painterResource(id = R.drawable.hce_markdown)
+                            painter = painterResource(id = R.drawable.hce_play_store)
                         )
                         Row(
                             verticalAlignment = Alignment.CenterVertically
@@ -93,7 +93,7 @@ fun GitHubSource(
                                     .weight(1f)
                                     .rotate(rotationState),
                                 onClick = {
-                                    expandedState = true
+                                    expandedState = !expandedState
                                 }
                             ) {
                                 Image(
