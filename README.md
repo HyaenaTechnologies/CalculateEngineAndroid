@@ -28,10 +28,12 @@
 
 [![Android Workflow](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml/badge.svg)](https://github.com/HyaenaTechnologies/calculate_engine_android/actions/workflows/android.yml)
 
-# Calculate Engine
+# Calculate Engine Android
 
 Calculate Engine is an Open Source Mathematics Engine. The function is to provide Calculators,
 Steps and promote [OpenStax][Stax], [Rice University][Rice].
+
+Calculate Engine Android is the Android Implementation of the Calculate Engine
 
 ## Build
 
