@@ -5,10 +5,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
-val androidxCompose: String = "1.6.8"
+val androidxCompose: String = "1.7.2"
 val androidxComposeCompiler: String = "1.5.15"
-val androidxLifecycle: String = "2.8.4"
-val androidxNavigation: String = "2.7.7"
+val androidxLifecycle: String = "2.8.6"
+val androidxNavigation: String = "2.8.1"
 val androidxTest: String = "1.6.1"
 val androidxTestServices: String = "1.5.0"
 val ioKtor: String = "2.3.12"
@@ -73,18 +73,18 @@ android {
 
 dependencies {
     // Android
-    implementation("androidx.activity:activity-compose:1.9.1")
+    implementation("androidx.activity:activity-compose:1.9.2")
     implementation("androidx.compose.animation:animation:$androidxCompose")
     implementation("androidx.compose.compiler:compiler:$androidxComposeCompiler")
     implementation("androidx.compose.foundation:foundation:$androidxCompose")
-    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.compose.material3:material3:1.3.0")
     implementation("androidx.compose.runtime:runtime:$androidxCompose")
     implementation("androidx.compose.ui:ui:$androidxCompose")
     implementation("androidx.compose.ui:ui-text-google-fonts:$androidxCompose")
     implementation("androidx.compose.ui:ui-tooling:$androidxCompose")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.fragment:fragment-compose:1.8.2")
+    implementation("androidx.fragment:fragment-compose:1.8.3")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$androidxLifecycle")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$androidxLifecycle")
     implementation("androidx.navigation:navigation-common-ktx:$androidxNavigation")
@@ -108,7 +108,7 @@ dependencies {
     implementation("io.ktor:ktor-websocket-serialization:$ioKtor")
     // JetBrains
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$jetBrainsKotlin")
-    implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7")
+    implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.3")
@@ -132,5 +132,5 @@ dependencies {
     testImplementation("io.ktor:ktor-test-dispatcher:$ioKtor")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$jetBrainsKotlin")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$orgJetBrainsKotlinXCoroutines")
-    testImplementation("org.jetbrains.kotlinx:lincheck:2.33")
+    testImplementation("org.jetbrains.kotlinx:lincheck:2.34")
 }
