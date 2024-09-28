@@ -111,7 +111,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$orgJetBrainsKotlinXCoroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$orgJetBrainsKotlinXSerialization")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:$orgJetBrainsKotlinXSerialization")
