@@ -45,7 +45,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "dev.calculate_engine"
+        applicationId = "dev.CalculateEngine"
         minSdk = 26
         targetSdk = 34
         testInstrumentationRunner = "androidx.test.runner"

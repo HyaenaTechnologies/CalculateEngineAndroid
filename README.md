@@ -18,10 +18,10 @@
 
 [Stax]: https://openstax.org
 
-<a href="https://github.com/HyaenaTechnologies/calculate_engine_android">
+<a href="https://github.com/HyaenaTechnologies/CalculateEngineAndroid">
   <h1>
     <picture>
-      <img src="https://github.com/HyaenaTechnologies/calculate_engine_android/blob/main/app/src/main/res/drawable/hce_markdown.png" alt="">
+      <img src="https://github.com/HyaenaTechnologies/CalculateEngineAndroid/blob/main/app/src/main/res/drawable/hce_markdown.png" alt="">
     </picture>
   </h1>
 </a>

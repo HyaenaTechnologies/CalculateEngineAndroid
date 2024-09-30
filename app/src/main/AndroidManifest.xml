@@ -16,7 +16,7 @@
             android:directBootAware="true"
             android:exported="true"
             android:launchMode="singleTop"
-            android:name="dev.calculate_engine.MainActivity"
+            android:name="dev.CalculateEngine.MainActivity"
             android:resizeableActivity="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
