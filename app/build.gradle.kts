@@ -60,7 +60,7 @@ android {
         jvmTarget = "17"
     }
 
-    namespace = "dev.calculate_engine"
+    namespace = "dev.CalculateEngine"
 
     packaging {
         resources {
